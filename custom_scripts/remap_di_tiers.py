@@ -1,3 +1,5 @@
+# Used to map chernarus to di tiers for DI 5.9
+
 import xml.etree.ElementTree as ET
 from typing import Set, List
 import os
