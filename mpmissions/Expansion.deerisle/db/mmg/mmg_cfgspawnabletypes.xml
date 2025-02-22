@@ -587,18 +587,18 @@
 	</type>
 	<type name="MMG_falcon_b1_belt_multicam">
 		<attachments chance="1.00">
-			<item name="MMG_Med_Pouch_multicam" 		chance="0.20" />
-			<item name="MMG_tactical_pouch_multicam" 	chance="0.20" />
-			<item name="MMG_Holster_multicam" 			chance="0.20" />
+			<item name="MMG_Med_Pouch_multicam" 		chance="1.00" />
+			<item name="MMG_tactical_pouch_multicam" 	chance="0.50" />
+			<item name="MMG_Holster_multicam" 			chance="0.30" />
 			<item name="MMG_carbine_red" 				chance="0.05" />
 			<item name="MMG_carbine_blue" 				chance="0.05" />
 			<item name="MMG_carbine_green" 				chance="0.05" />
 			<item name="MMG_carbine_black" 				chance="0.05" />
 			<item name="MMG_carbine_grey" 				chance="0.05" />
 		    <item name="MMG_carbine_orange" 			chance="0.05" />
-			<item name="MMG_Epinephrine" 				chance="0.10" />
-			<item name="MMG_Morphine" 					chance="0.10" />
-			<item name="MMG_sheath_multicam" 			chance="0.20" />
+			<item name="MMG_Epinephrine" 				chance="0.50" />
+			<item name="MMG_Morphine" 					chance="0.50" />
+			<item name="MMG_sheath_multicam" 			chance="0.50" />
 			<item name="MMG_nbc_pouch" 					chance="0.05" />	
 		</attachments>
 	</type>
