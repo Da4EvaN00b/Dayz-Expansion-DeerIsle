@@ -13923,10 +13923,10 @@
         <category name="food" />
         </type>
     <type name="MKII">
-        <nominal>35</nominal>
+        <nominal>45</nominal>
         <lifetime>7200</lifetime>
         <restock>0</restock>
-        <min>22</min>
+        <min>35</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
