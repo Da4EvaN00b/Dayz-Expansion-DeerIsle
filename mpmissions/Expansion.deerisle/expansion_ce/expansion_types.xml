@@ -3063,21 +3063,6 @@
         <value name="Tier3" />
         <value name="Tier5" />
         </type>
-    <type name="Expansion_Crossbow">
-        <nominal>36</nominal>
-        <lifetime>7200</lifetime>
-        <restock>0</restock>
-        <min>30</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Farm" />
-        <usage name="Village" />
-        <value name="Tier1" />
-        <value name="Tier2" />
-        </type>
     <type name="ExpansionRPG7">
         <nominal>8</nominal>
         <lifetime>10800</lifetime>
@@ -3737,20 +3722,6 @@
         <value name="Tier5" />
         <value name="Tier6" />
         <value name="Tier7" />
-        </type>
-    <type name="Expansion_Ammo_ArrowBolt">
-        <nominal>60</nominal>
-        <lifetime>10800</lifetime>
-        <restock>0</restock>
-        <min>50</min>
-        <quantmin>20</quantmin>
-        <quantmax>100</quantmax>
-        <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Farm" />
-        <usage name="Village" />
-        <usage name="Hunting" />
         </type>
     <type name="Mag_Expansion_Taser">
         <nominal>2</nominal>

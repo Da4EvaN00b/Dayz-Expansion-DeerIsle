@@ -1,8 +1,8 @@
 {
     "m_Version": 2,
     "Enabled": 1,
-    "InitialMissionStartDelay": 3600000,
-    "TimeBetweenMissions": 4500000,
+    "InitialMissionStartDelay": 2700000,
+    "TimeBetweenMissions": 5400000,
     "MinMissions": 0,
     "MaxMissions": 1,
     "MinPlayersToStartMissions": 0
