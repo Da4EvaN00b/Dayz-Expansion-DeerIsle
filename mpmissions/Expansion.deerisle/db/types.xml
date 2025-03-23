@@ -2014,10 +2014,10 @@
         <category name="tools" />
         </type>
     <type name="Apple">
-        <nominal>35</nominal>
+        <nominal>45</nominal>
         <lifetime>900</lifetime>
         <restock>0</restock>
-        <min>32</min>
+        <min>35</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -8033,10 +8033,10 @@
         <usage name="Medic" />
         </type>
     <type name="FNP45_MRDSOptic">
-        <nominal>35</nominal>
+        <nominal>45</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>32</min>
+        <min>42</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -11369,10 +11369,10 @@
         <usage name="Industrial" />
         </type>
     <type name="Honey">
-        <nominal>15</nominal>
+        <nominal>8</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>12</min>
+        <min>6</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -20717,10 +20717,10 @@
         <usage name="Village" />
         </type>
     <type name="SodaCan_Pipsi">
-        <nominal>42</nominal>
+        <nominal>20</nominal>
         <lifetime>7200</lifetime>
         <restock>600</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -20731,10 +20731,10 @@
         <usage name="Village" />
         </type>
     <type name="SodaCan_Spite">
-        <nominal>42</nominal>
+        <nominal>20</nominal>
         <lifetime>7200</lifetime>
         <restock>600</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -27742,22 +27742,20 @@
         <usage name="Military" />
         </type>
     <type name="STAG_Clothing_Armband">
-        <nominal>42</nominal>
+        <nominal>25</nominal>
         <lifetime>1800</lifetime>
         <restock>0</restock>
-        <min>28</min>
+        <min>22</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="tools" />
-        <value name="Tier3" />
         <value name="Tier4" />
-        <value name="Tier5" />
         <value name="Tier9" />
         <value name="Tier6" />
-        <value name="Tier2" />
-        <value name="Tier1" />
+        <value name="Tier7" />
+        <value name="Tier8" />
         <usage name="Military" />
         </type>
     <type name="STAG_Clothing_ArmyBackpack">
