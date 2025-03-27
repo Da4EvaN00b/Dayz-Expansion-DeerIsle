@@ -8034,10 +8034,10 @@
         <usage name="Medic" />
         </type>
     <type name="FNP45_MRDSOptic">
-        <nominal>45</nominal>
+        <nominal>50</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>42</min>
+        <min>47</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -13728,10 +13728,10 @@
         <value name="Tier5" />
         </type>
     <type name="M4_Suppressor">
-        <nominal>21</nominal>
+        <nominal>24</nominal>
         <lifetime>7200</lifetime>
         <restock>14400</restock>
-        <min>14</min>
+        <min>20</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -14596,7 +14596,7 @@
         <nominal>45</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>42</min>
+        <min>40</min>
         <quantmin>10</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -17311,8 +17311,10 @@
         <category name="weapons" />
         <usage name="Military" />
         <usage name="Police" />
+        <usage name="Tier2" />
         <value name="Tier3" />
         <value name="Tier5" />
+        <value name="Tier4" />
         </type>
     <type name="PlantMaterial">
         <nominal>0</nominal>
@@ -19286,10 +19288,10 @@
         <usage name="Industrial" />
         </type>
     <type name="Scout">
-        <nominal>38</nominal>
+        <nominal>20</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -19301,16 +19303,17 @@
         <value name="Tier5" />
         </type>
     <type name="Scout_Chernarus">
-        <nominal>0</nominal>
+        <nominal>18</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>0</min>
+        <min>15</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="weapons" />
         <usage name="Military" />
+        <usage name="Police" />
         <value name="Tier3" />
         <value name="Tier5" />
         </type>
@@ -20676,10 +20679,10 @@
         <usage name="Town" />
         </type>
     <type name="SodaCan_Cola">
-        <nominal>42</nominal>
+        <nominal>20</nominal>
         <lifetime>7200</lifetime>
         <restock>600</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -20690,10 +20693,10 @@
         <usage name="Village" />
         </type>
     <type name="SodaCan_Fronta">
-        <nominal>42</nominal>
+        <nominal>20</nominal>
         <lifetime>7200</lifetime>
         <restock>600</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -20704,10 +20707,10 @@
         <usage name="Village" />
         </type>
     <type name="SodaCan_Kvass">
-        <nominal>42</nominal>
+        <nominal>20</nominal>
         <lifetime>7200</lifetime>
         <restock>600</restock>
-        <min>35</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -22641,6 +22644,8 @@
         <tag name="shelves" />
         <usage name="Village" />
         <usage name="Town" />
+        <value name="Tier1" />
+        <value name="Tier2" />
         </type>
     <type name="TunaCan_Opened">
         <nominal>0</nominal>
@@ -22839,10 +22844,10 @@
         <value name="Tier9" />
         </type>
     <type name="UnknownFoodCan">
-        <nominal>30</nominal>
+        <nominal>20</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>27</min>
+        <min>17</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -28152,10 +28157,10 @@
         <value name="Tier9" />
         </type>
     <type name="ESP_Wrapped_Suppressor">
-        <nominal>15</nominal>
+        <nominal>20</nominal>
         <lifetime>1800</lifetime>
         <restock>0</restock>
-        <min>13</min>
+        <min>18</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
