@@ -8034,10 +8034,10 @@
         <usage name="Medic" />
         </type>
     <type name="FNP45_MRDSOptic">
-        <nominal>35</nominal>
+        <nominal>50</nominal>
         <lifetime>7200</lifetime>
         <restock>1800</restock>
-        <min>32</min>
+        <min>47</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>

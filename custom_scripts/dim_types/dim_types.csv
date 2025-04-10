@@ -87,12 +87,12 @@ Ammo_9x19,types,110,7200,0,95,100,weapons,0,0
 Ammo_9x39,types,60,10800,0,50,100,weapons,0,0
 Ammo_9x39AP,types,30,10800,0,20,100,weapons,0,0
 Ammo_40mm_ChemGas,types,8,14400,0,6,100,weapons,0,0
-Ammo_CupidsBolt,types,0,7200,0,0,100,weapons,1,0
+Ammo_CupidsBolt,types,6,7200,0,5,100,weapons,1,0
 Ammo_Flare,types,15,14400,0,12,100,weapons,0,0
 Ammo_FlareBlue,types,8,14400,0,4,100,weapons,0,0
 Ammo_FlareGreen,types,8,14400,0,5,100,weapons,0,0
 Ammo_FlareRed,types,8,14400,0,5,100,weapons,0,0
-Ammo_HuntingBolt,types,60,14400,0,50,100,weapons,0,0
+Ammo_HuntingBolt,types,85,14400,0,75,100,weapons,0,0
 Ammo_ImprovisedBolt_1,types,0,7200,0,0,100,weapons,1,0
 Ammo_ImprovisedBolt_2,types,0,7200,0,0,100,weapons,1,0
 Animal_CapraHircus_Spooky,types,0,1800,0,0,100,,0,0
@@ -130,7 +130,7 @@ AnniversaryBox,types,0,14400,0,0,100,containers,0,0
 Anniversary_FireworksLauncher,types,0,14400,0,0,100,tools,0,0
 AntiChemInjector,types,6,14400,3600,3,100,tools,0,0
 AntiPestsSpray,types,0,1800,0,0,100,tools,1,0
-Apple,types,35,900,0,32,100,food,1,0
+Apple,types,45,900,0,35,100,food,1,0
 Armband_Crook,types,0,14400,0,0,100,clothes,1,0
 Armband_Rex,types,0,14400,0,0,100,clothes,1,0
 Armband_Zagorky,types,0,14400,0,0,100,clothes,1,0
@@ -799,7 +799,7 @@ HockeyHelmet_Blue,types,15,5600,0,10,100,clothes,0,0
 HockeyHelmet_Red,types,15,5600,0,10,100,clothes,0,0
 HockeyHelmet_White,types,15,5600,0,10,100,clothes,0,0
 HockeyMask,types,30,14400,0,20,100,clothes,0,0
-Honey,types,15,14400,0,12,100,food,0,0
+Honey,types,8,14400,0,6,100,food,0,0
 Hoodie_Black,types,30,5600,0,20,100,clothes,0,0
 Hoodie_Blue,types,30,5600,0,20,100,clothes,0,0
 Hoodie_Brown,types,30,5600,0,20,100,clothes,0,0
@@ -981,7 +981,7 @@ M4_PlasticHndgrd,types,11,7200,0,6,100,weapons,0,0
 M4_RISHndgrd,types,11,7200,0,6,100,weapons,0,0
 M4_RISHndgrd_Black,types,0,7200,0,0,100,weapons,1,0
 M4_RISHndgrd_Green,types,0,7200,0,0,100,weapons,1,0
-M4_Suppressor,types,21,7200,14400,14,100,weapons,0,0
+M4_Suppressor,types,24,7200,14400,20,100,weapons,0,0
 M4_T3NRDSOptic,types,28,7200,1800,22,100,weapons,0,0
 M65Jacket_Black,types,7,7200,600,4,100,clothes,0,0
 M65Jacket_Khaki,types,28,7200,600,21,100,clothes,0,1
@@ -994,7 +994,7 @@ M9A1_Bayonet,types,14,14400,0,7,100,weapons,0,0
 Mace,types,2,14400,0,1,100,clothes,0,0
 Mackerel,types,0,14400,0,0,100,food,1,0
 MackerelFilletMeat,types,0,14400,0,0,100,food,1,0
-MKII,types,35,7200,0,22,100,weapons,0,0
+MKII,types,45,7200,0,35,100,weapons,0,0
 MP5K,types,28,10800,1800,21,100,weapons,0,0
 MP5_Compensator,types,14,7200,0,7,100,weapons,0,0
 MP5_PlasticHndgrd,types,14,1800,0,10,100,weapons,0,0
@@ -1033,7 +1033,7 @@ Mag_P1_8Rnd,types,42,14400,0,28,100,weapons,0,0
 Mag_PP19_64Rnd,types,35,28800,3600,28,100,weapons,0,0
 Mag_Ruger1022_15Rnd,types,35,10800,0,28,100,weapons,0,0
 Mag_Ruger1022_30Rnd,types,35,10800,0,28,100,weapons,0,0
-Mag_Scout_5Rnd,types,45,28800,0,42,100,weapons,0,0
+Mag_Scout_5Rnd,types,45,28800,0,40,100,weapons,0,0
 Mag_SSG82_5rnd,types,42,14400,0,36,100,weapons,0,0
 Mag_STANAG_60Rnd,types,14,28800,2700,8,100,weapons,0,0
 Mag_STANAGCoupled_30Rnd,types,21,10800,2700,14,100,weapons,0,0
@@ -1364,8 +1364,8 @@ SawedoffMosin9130_Black,types,0,7200,0,0,100,weapons,1,0
 SawedoffMosin9130_Camo,types,0,7200,0,0,100,weapons,1,0
 SawedoffMosin9130_Green,types,0,7200,0,0,100,weapons,1,0
 Screwdriver,types,50,7200,0,30,100,tools,0,0
-Scout,types,38,28800,0,35,100,weapons,0,1
-Scout_Chernarus,types,0,28800,0,0,100,weapons,0,0
+Scout,types,20,28800,0,18,100,weapons,0,1
+Scout_Chernarus,types,18,28800,0,15,100,weapons,0,0
 Scout_Livonia,types,0,28800,0,0,100,weapons,0,0
 SeaChest,types,20,3888000,0,10,100,tools,0,0
 Sedan_02,types,0,3,1800,0,100,,0,0
@@ -1469,11 +1469,11 @@ Sneakers_Gray,types,30,5600,0,20,100,clothes,0,0
 Sneakers_Green,types,30,5600,0,20,100,clothes,0,0
 Sneakers_Red,types,30,5600,0,20,100,clothes,0,0
 Sneakers_White,types,30,5600,0,20,100,clothes,0,0
-SodaCan_Cola,types,42,7200,600,35,100,industrialfood,0,0
-SodaCan_Fronta,types,42,7200,600,35,100,industrialfood,0,0
-SodaCan_Kvass,types,42,7200,600,35,100,industrialfood,0,0
-SodaCan_Pipsi,types,42,7200,600,35,100,industrialfood,0,0
-SodaCan_Spite,types,42,7200,600,35,100,industrialfood,0,0
+SodaCan_Cola,types,20,7200,600,18,100,industrialfood,0,0
+SodaCan_Fronta,types,20,7200,600,18,100,industrialfood,0,0
+SodaCan_Kvass,types,20,7200,600,18,100,industrialfood,0,0
+SodaCan_Pipsi,types,20,7200,600,18,100,industrialfood,0,0
+SodaCan_Spite,types,20,7200,600,18,100,industrialfood,0,0
 SpaghettiCan,types,12,7200,600,9,100,industrialfood,0,0
 SpaghettiCan_Opened,types,0,3600,0,0,100,food,1,0
 SparkPlug,types,100,2700,0,70,100,tools,0,0
@@ -1632,7 +1632,7 @@ USMCPants_Desert,types,21,5600,0,14,100,clothes,0,0
 USMCPants_Woodland,types,21,5600,600,14,100,clothes,0,0
 UndergroundStash,types,0,3888000,0,0,100,containers,1,0
 UniversalLight,types,28,7200,60,14,100,weapons,0,0
-UnknownFoodCan,types,30,14400,0,27,100,food,0,0
+UnknownFoodCan,types,20,14400,0,17,100,food,0,0
 UnknownFoodCan_Opened,types,0,14400,0,0,100,food,1,0
 Ushanka_Black,types,14,5600,0,7,100,clothes,0,0
 Ushanka_Blue,types,14,5600,0,7,100,clothes,0,0
@@ -2030,7 +2030,7 @@ STAG_CombatKnife,types,14,14400,0,8,100,tools,0,0
 STAG_Clothing_6sh118,types,3,86400,0,1,100,tools,0,0
 STAG_Teddybear_brown,types,7,86400,0,4,100,tools,0,0
 STAG_Teddybear_black,types,7,86400,0,4,100,tools,0,0
-STAG_Clothing_Armband,types,42,1800,0,28,100,tools,0,0
+STAG_Clothing_Armband,types,25,1800,0,22,100,tools,0,0
 STAG_Clothing_ArmyBackpack,types,21,86400,0,14,100,tools,0,1
 STAG_Clothing_Cap,types,35,1800,0,28,100,tools,0,0
 STAG_Clothing_Beret,types,21,1800,0,14,100,tools,0,0
@@ -2058,7 +2058,7 @@ STG_AK_RIS_Adapter,types,13,1800,0,8,100,weapons,0,0
 STG_AK_Stck_Adapter,types,7,1800,0,4,100,weapons,0,0
 SRP_PistolSuppressor_Golden,types,3,1800,0,1,100,weapons,0,0
 STG_PBS5_Suppressor,types,14,1800,0,8,100,weapons,0,0
-ESP_Wrapped_Suppressor,types,15,1800,0,13,100,weapons,0,0
+ESP_Wrapped_Suppressor,types,20,1800,0,18,100,weapons,0,0
 ESP_Wrapped_Suppressor_Green,types,25,1800,0,22,100,weapons,0,1
 ESP_Wrapped_Suppressor_Black,types,12,1800,0,10,100,weapons,0,0
 ESP_Tac_Craftsmen,types,11,1800,0,7,100,weapons,0,1
@@ -2350,7 +2350,6 @@ Expansion_M1A_RailAtt,expansion,11,10800,800,7,100,weapons,0,0
 Expansion_ANPEQ15_Red,expansion,7,7200,800,3,100,weapons,0,0
 Expansion_Kar98_Bayonet,expansion,11,14400,0,7,100,weapons,0,0
 ExpansionSatchel,expansion,17,10800,10800,1,100,weapons,0,0
-Expansion_Crossbow,expansion,36,7200,0,30,100,weapons,0,0
 ExpansionRPG7,expansion,8,10800,3600,3,100,weapons,0,0
 ExpansionLAW,expansion,8,10800,3600,3,100,weapons,0,0
 Expansion_M79,expansion,11,10800,1800,7,100,weapons,0,0
@@ -2395,7 +2394,6 @@ Ammo_Expansion_M203_Sticky_Smoke_Teargas,expansion,2,7200,0,1,100,weapons,0,0
 Ammo_Expansion_M203_HE,expansion,5,7200,0,2,100,weapons,0,0
 Ammo_Expansion_46x30,expansion,68,10800,0,62,100,weapons,0,0
 Ammo_Expansion_338,expansion,70,10800,0,60,100,weapons,0,0
-Expansion_Ammo_ArrowBolt,expansion,60,10800,0,50,100,weapons,0,0
 Mag_Expansion_Taser,expansion,2,10800,1800,1,100,weapons,0,0
 Mag_Expansion_Vityaz_30Rnd,expansion,30,10800,800,25,100,weapons,0,0
 Mag_Expansion_M14_20Rnd,expansion,25,10800,800,20,100,weapons,0,0
@@ -2537,8 +2535,9 @@ ExpansionDebugGoat,expansion,0,3888000,0,0,0,,1,0
 SNAFU_NPKPBIPOD,snafu,22,7200,1800,18,100,weapons,0,0
 Snafu_pkp_250RND_Mag,snafu,18,7200,1800,14,100,weapons,0,0
 Snafu_pkp_Black_GUN,snafu,8,7200,1800,6,100,weapons,0,0
-SNAFUKivaari_10rdMag,snafu,20,7200,1800,15,100,weapons,0,0
-SNAFUKivaari_25rdMag,snafu,15,7200,1800,12,100,weapons,0,1
+SNAFUKivaari_Tan_GUN,snafu,5,7200,1800,3,100,weapons,0,1
+SNAFUKivaari_10rdMag,snafu,20,7200,1800,18,100,weapons,0,0
+SNAFUKivaari_25rdMag,snafu,12,7200,1800,8,100,weapons,0,1
 SNAFUKivaari_Black_GUN,snafu,12,7200,1800,8,100,weapons,0,0
 SNAFU_ModBipod,snafu,25,7200,1800,20,100,weapons,0,0
 SNAFU_Tango6T_Black,snafu,25,7200,1800,22,100,weapons,0,0

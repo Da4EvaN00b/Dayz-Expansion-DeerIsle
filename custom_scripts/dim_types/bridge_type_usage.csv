@@ -245,6 +245,7 @@ Ammo_FlareRed,types,Coast
 Ammo_FlareRed,types,Hunting
 Ammo_FlareRed,types,Firefighter
 Ammo_HuntingBolt,types,Hunting
+Ammo_HuntingBolt,types,Town
 AnniversaryBox,types,SeasonalEvent
 AntiChemInjector,types,Military
 AntiChemInjector,types,Medic
@@ -2046,6 +2047,7 @@ PilotkaCap,types,Military
 Pipe,types,Industrial
 PistolSuppressor,types,Military
 PistolSuppressor,types,Police
+PistolSuppressor,types,Tier2
 Plastic_Explosive,types,Military
 PlateCarrierHolster,types,Military
 PlateCarrierHolster,types,Police
@@ -2320,6 +2322,7 @@ Screwdriver,types,Industrial
 Scout,types,Military
 Scout,types,Police
 Scout_Chernarus,types,Military
+Scout_Chernarus,types,Police
 Scout_Livonia,types,Military
 SeaChest,types,Coast
 Sedan_02_Door_1_1,types,Industrial
@@ -3317,8 +3320,6 @@ Expansion_Kar98_Bayonet,expansion,Military
 Expansion_Kar98_Bayonet,expansion,Hunting
 Expansion_Kar98_Bayonet,expansion,Farm
 ExpansionSatchel,expansion,Military
-Expansion_Crossbow,expansion,Farm
-Expansion_Crossbow,expansion,Village
 ExpansionRPG7,expansion,Military
 ExpansionLAW,expansion,Military
 Expansion_M79,expansion,Military
@@ -3381,9 +3382,6 @@ Ammo_Expansion_M203_Sticky_Smoke_Teargas,expansion,Police
 Ammo_Expansion_M203_HE,expansion,Military
 Ammo_Expansion_46x30,expansion,Military
 Ammo_Expansion_338,expansion,Military
-Expansion_Ammo_ArrowBolt,expansion,Farm
-Expansion_Ammo_ArrowBolt,expansion,Village
-Expansion_Ammo_ArrowBolt,expansion,Hunting
 Mag_Expansion_Taser,expansion,Police
 Mag_Expansion_Vityaz_30Rnd,expansion,Military
 Mag_Expansion_M14_20Rnd,expansion,Military
@@ -3453,6 +3451,7 @@ ExpansionCheese4,expansion,Village
 SNAFU_NPKPBIPOD,snafu,Military
 Snafu_pkp_250RND_Mag,snafu,Military
 Snafu_pkp_Black_GUN,snafu,Military
+SNAFUKivaari_Tan_GUN,snafu,Military
 SNAFUKivaari_10rdMag,snafu,Military
 SNAFUKivaari_10rdMag,snafu,Police
 SNAFUKivaari_25rdMag,snafu,Military

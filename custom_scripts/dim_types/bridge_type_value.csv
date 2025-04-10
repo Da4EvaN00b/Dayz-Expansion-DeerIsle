@@ -337,9 +337,9 @@ Ammo_FlareRed,types,Tier2
 Ammo_FlareRed,types,Tier3
 Ammo_FlareRed,types,Tier4
 Ammo_HuntingBolt,types,Tier3
-Ammo_HuntingBolt,types,Tier4
 Ammo_HuntingBolt,types,Tier5
 Ammo_HuntingBolt,types,Tier2
+Ammo_HuntingBolt,types,Tier1
 Ammo_ImprovisedBolt_1,types,all
 Ammo_ImprovisedBolt_2,types,all
 Animal_CapraHircus_Spooky,types,all
@@ -2301,6 +2301,7 @@ PilotkaCap,types,Tier2
 Pipe,types,all
 PistolSuppressor,types,Tier3
 PistolSuppressor,types,Tier5
+PistolSuppressor,types,Tier4
 PlantMaterial,types,all
 Plant_Pepper,types,all
 Plant_Potato,types,all
@@ -2897,7 +2898,8 @@ Truck_01_Wheel,types,all
 Truck_01_WheelDouble,types,all
 Truck_01_WheelDouble_Ruined,types,all
 Truck_01_Wheel_Ruined,types,all
-TunaCan,types,all
+TunaCan,types,Tier1
+TunaCan,types,Tier2
 TunaCan_Opened,types,all
 UKAssVest_Black,types,Tier7
 UKAssVest_Camo,types,Tier3
@@ -3555,13 +3557,11 @@ STAG_Teddybear_black,types,Tier9
 STAG_Teddybear_black,types,Tier8
 STAG_Teddybear_black,types,Tier7
 STAG_Teddybear_black,types,Tier6
-STAG_Clothing_Armband,types,Tier3
 STAG_Clothing_Armband,types,Tier4
-STAG_Clothing_Armband,types,Tier5
 STAG_Clothing_Armband,types,Tier9
 STAG_Clothing_Armband,types,Tier6
-STAG_Clothing_Armband,types,Tier2
-STAG_Clothing_Armband,types,Tier1
+STAG_Clothing_Armband,types,Tier7
+STAG_Clothing_Armband,types,Tier8
 STAG_Clothing_ArmyBackpack,types,Tier3
 STAG_Clothing_ArmyBackpack,types,Tier4
 STAG_Clothing_ArmyBackpack,types,Tier5
@@ -3996,8 +3996,6 @@ Expansion_Kar98_Bayonet,expansion,Tier2
 Expansion_Kar98_Bayonet,expansion,Tier3
 ExpansionSatchel,expansion,Tier3
 ExpansionSatchel,expansion,Tier5
-Expansion_Crossbow,expansion,Tier1
-Expansion_Crossbow,expansion,Tier2
 ExpansionRPG7,expansion,Tier4
 ExpansionRPG7,expansion,Tier6
 ExpansionRPG7,expansion,Tier7
@@ -4123,7 +4121,6 @@ Ammo_Expansion_338,expansion,Tier4
 Ammo_Expansion_338,expansion,Tier5
 Ammo_Expansion_338,expansion,Tier6
 Ammo_Expansion_338,expansion,Tier7
-Expansion_Ammo_ArrowBolt,expansion,all
 Mag_Expansion_Taser,expansion,Tier1
 Mag_Expansion_Taser,expansion,Tier2
 Mag_Expansion_Taser,expansion,Tier3
@@ -4300,6 +4297,11 @@ Snafu_pkp_Black_GUN,snafu,Tier6
 Snafu_pkp_Black_GUN,snafu,Tier7
 Snafu_pkp_Black_GUN,snafu,Tier8
 Snafu_pkp_Black_GUN,snafu,Tier9
+SNAFUKivaari_Tan_GUN,snafu,Tier4
+SNAFUKivaari_Tan_GUN,snafu,Tier6
+SNAFUKivaari_Tan_GUN,snafu,Tier7
+SNAFUKivaari_Tan_GUN,snafu,Tier8
+SNAFUKivaari_Tan_GUN,snafu,Tier9
 SNAFUKivaari_10rdMag,snafu,Tier4
 SNAFUKivaari_10rdMag,snafu,Tier6
 SNAFUKivaari_10rdMag,snafu,Tier7
