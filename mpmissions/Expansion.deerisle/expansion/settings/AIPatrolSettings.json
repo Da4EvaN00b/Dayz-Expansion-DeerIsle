@@ -6157,7 +6157,7 @@
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
-            "NumberOfAI": -4,
+            "NumberOfAI": -6,
             "Behaviour": "ALTERNATE",
             "LootingBehaviour": "NONE",
             "Speed": "WALK",
