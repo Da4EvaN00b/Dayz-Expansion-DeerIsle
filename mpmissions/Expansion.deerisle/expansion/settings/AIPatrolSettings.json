@@ -5953,7 +5953,7 @@
             "LootingBehaviour": "NONE",
             "Speed": "STATIC",
             "UnderThreatSpeed": "STATIC",
-            "CanBeLooted": 1,
+            "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
             "AccuracyMin": 0.85,
