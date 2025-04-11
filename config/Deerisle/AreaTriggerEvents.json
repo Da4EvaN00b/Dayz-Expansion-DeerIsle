@@ -702,6 +702,62 @@
                 "InfectedSoldierHardJMC",
                 "ZmbM_usSoldier_normal_Woodland"
             ]
+        },
+        {
+            "name": "DeepwaterRig",
+            "workinghours": "0-24",
+            "triggerpos": "1642.19 31.8452 12693.1",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 150.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 3600,
+            "spawnerpos": [
+                "1649.91 31.8465 12713.5",
+                "1621.8 31.8919 12762.6",
+                "1777.95 23.312, 12690.5",
+                "1689.24 39.756 12767.5"
+            ],
+            "spawnradius": 0.0,
+            "bubaknum": 7,
+            "onlyfilluptobubaknum": 0,
+            "itemrandomdmg": 1,
+            "bubaci": [
+                "ZmbM_usSoldier_Heavy_Woodland",
+                "InfectedSoldierHardJMC",
+                "ZmbM_usSoldier_normal_Woodland"
+            ]
+        },
+        {
+            "name": "EastDeepwaterRig",
+            "workinghours": "0-24",
+            "triggerpos": "3500.3 25.2214 12445.5",
+            "triggermins": "0 0 0",
+            "triggermaxs": "0 0 0",
+            "triggerradius": 150.0,
+            "triggercylradius": 0.0,
+            "triggercylheight": 0.0,
+            "notification": "",
+            "notificationtime": 2,
+            "triggerdelay": 3600,
+            "spawnerpos": [
+                "3501.04 25.2209 12470.2",
+                "3466.33 25.1547 12440.2",
+                "3503.38 25.4435 12418.1",
+                "3480.31 26.5109 12398.9"
+            ],
+            "spawnradius": 0.0,
+            "bubaknum": 7,
+            "onlyfilluptobubaknum": 0,
+            "itemrandomdmg": 1,
+            "bubaci": [
+                "ZmbM_usSoldier_Heavy_Woodland",
+                "InfectedSoldierHardJMC",
+                "ZmbM_usSoldier_normal_Woodland"
+            ]
         }
     ]
 }
