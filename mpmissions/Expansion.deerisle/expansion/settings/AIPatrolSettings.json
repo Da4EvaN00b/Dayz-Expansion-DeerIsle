@@ -1,6 +1,7 @@
 {
-    "m_Version": 22,
+    "m_Version": 24,
     "Enabled": 1,
+    "FormationScale": -1.0,
     "DespawnTime": 1800.0,
     "RespawnTime": 3600.0,
     "MinDistRadius": 175.0,
@@ -12,12 +13,89 @@
     "NoiseInvestigationDistanceLimit": -1.0,
     "DamageMultiplier": -1.0,
     "DamageReceivedMultiplier": -1.0,
+    "LoadBalancingCategories": {
+        "Global": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 10,
+                "MaxPatrols": 20
+            },
+            {
+                "MinPlayers": 11,
+                "MaxPlayers": 20,
+                "MaxPatrols": 8
+            },
+            {
+                "MinPlayers": 21,
+                "MaxPlayers": 30,
+                "MaxPatrols": 6
+            },
+            {
+                "MinPlayers": 31,
+                "MaxPlayers": 40,
+                "MaxPatrols": 4
+            },
+            {
+                "MinPlayers": 41,
+                "MaxPlayers": 50,
+                "MaxPatrols": 2
+            },
+            {
+                "MinPlayers": 51,
+                "MaxPlayers": 255,
+                "MaxPatrols": 0
+            }
+        ],
+        "Example": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": -1
+            }
+        ],
+        "Quest": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": -1
+            }
+        ],
+        "ObjectPatrol": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": 10
+            }
+        ],
+        "HelicopterWreck": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": 3
+            }
+        ],
+        "ContaminatedArea": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": 3
+            }
+        ],
+        "Patrol": [
+            {
+                "MinPlayers": 0,
+                "MaxPlayers": 255,
+                "MaxPatrols": 20
+            }
+        ]
+    },
     "ObjectPatrols": [
         {
             "Name": "Wreck-UH1Y",
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -45,6 +123,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "HelicopterWreck",
             "ClassName": "Wreck_UH1Y"
         },
         {
@@ -52,6 +131,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -79,6 +159,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "HelicopterWreck",
             "ClassName": "Wreck_Mi8_Crashed"
         },
         {
@@ -86,6 +167,7 @@
             "Persist": 0,
             "Faction": "East",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PoliceLoadout",
             "Units": [],
@@ -113,6 +195,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "ClassName": "Land_Wreck_sed01_aban1_police"
         },
         {
@@ -120,6 +203,7 @@
             "Persist": 0,
             "Faction": "East",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PoliceLoadout",
             "Units": [],
@@ -147,6 +231,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "ClassName": "Land_Wreck_sed01_aban2_police"
         },
         {
@@ -154,6 +239,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "NBCLoadout",
             "Units": [],
@@ -181,6 +267,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "ContaminatedArea",
             "ClassName": "ContaminatedArea_Static"
         }
     ],
@@ -190,6 +277,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -217,6 +305,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -231,6 +320,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -258,12 +348,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3159.51,
-                    20.662,
-                    6284.55
+                    3159.510009765625,
+                    20.66200065612793,
+                    6284.5498046875
                 ]
             ]
         },
@@ -272,6 +363,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -299,6 +391,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -313,6 +406,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -340,6 +434,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -354,6 +449,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -381,6 +477,7 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -395,6 +492,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -422,12 +520,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    4700.53,
-                    20.5191,
-                    4374.44
+                    4700.52978515625,
+                    20.519100189208986,
+                    4374.43994140625
                 ]
             ]
         },
@@ -436,6 +535,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -463,12 +563,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    8624.35,
-                    7.41246,
-                    8950.55
+                    8624.349609375,
+                    7.412459850311279,
+                    8950.5498046875
                 ]
             ]
         },
@@ -477,6 +578,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -504,12 +606,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2092.57,
-                    9.20675,
-                    9101.96
+                    2092.570068359375,
+                    9.20674991607666,
+                    9101.9599609375
                 ]
             ]
         },
@@ -518,6 +621,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -545,12 +649,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
                     10232.5,
-                    41.4446,
-                    4881.18
+                    41.44459915161133,
+                    4881.18017578125
                 ]
             ]
         },
@@ -559,6 +664,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -586,12 +692,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    6673.55,
-                    15.1025,
-                    6271.6
+                    6673.5498046875,
+                    15.102499961853028,
+                    6271.60009765625
                 ]
             ]
         },
@@ -600,6 +707,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -627,12 +735,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    6708.57,
-                    31.2647,
-                    2887.48
+                    6708.56982421875,
+                    31.264699935913087,
+                    2887.47998046875
                 ]
             ]
         },
@@ -641,6 +750,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -668,12 +778,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    5813.52,
-                    83.4399,
-                    4134.52
+                    5813.52001953125,
+                    83.43990325927735,
+                    4134.52001953125
                 ]
             ]
         },
@@ -682,6 +793,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -709,12 +821,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    5813.81,
-                    148.983,
-                    6040.11
+                    5813.81005859375,
+                    148.98300170898438,
+                    6040.10986328125
                 ]
             ]
         },
@@ -723,6 +836,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -750,12 +864,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    7925.09,
-                    5.3425,
-                    9517.46
+                    7925.08984375,
+                    5.34250020980835,
+                    9517.4599609375
                 ]
             ]
         },
@@ -764,6 +879,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -791,12 +907,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3180.29,
-                    11.655,
-                    8965.11
+                    3180.2900390625,
+                    11.654999732971192,
+                    8965.1103515625
                 ]
             ]
         },
@@ -805,6 +922,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -832,12 +950,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    10011,
-                    71.9945,
-                    4778.42
+                    10011.0,
+                    71.99449920654297,
+                    4778.419921875
                 ]
             ]
         },
@@ -846,6 +965,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -873,12 +993,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    9189.62,
-                    23.7403,
-                    5175.1
+                    9189.6201171875,
+                    23.740299224853517,
+                    5175.10009765625
                 ]
             ]
         },
@@ -887,6 +1008,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -914,12 +1036,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    8904.87,
-                    21.8942,
-                    5981.09
+                    8904.8701171875,
+                    21.89419937133789,
+                    5981.08984375
                 ]
             ]
         },
@@ -928,6 +1051,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -955,12 +1079,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    8763.98,
-                    45.4325,
-                    3753.81
+                    8763.98046875,
+                    45.432498931884769,
+                    3753.81005859375
                 ]
             ]
         },
@@ -969,6 +1094,7 @@
             "Persist": 1,
             "Faction": "East",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -996,12 +1122,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    7856.17,
-                    47.7085,
-                    8098.35
+                    7856.169921875,
+                    47.708499908447269,
+                    8098.35009765625
                 ]
             ]
         },
@@ -1010,6 +1137,7 @@
             "Persist": 1,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PlayerSurvivorLoadout",
             "Units": [],
@@ -1037,12 +1165,13 @@
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": 600.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    11108.6,
-                    5.59248,
-                    10242.6
+                    11108.599609375,
+                    5.592480182647705,
+                    10242.599609375
                 ]
             ]
         },
@@ -1051,6 +1180,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -1072,32 +1202,33 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2657.17,
-                    22.6396,
-                    4440.59
+                    2657.169921875,
+                    22.63960075378418,
+                    4440.58984375
                 ],
                 [
-                    3008.23,
-                    22.3785,
+                    3008.22998046875,
+                    22.37849998474121,
                     4246.5
                 ],
                 [
-                    2933.28,
-                    22.4625,
-                    4094.96
+                    2933.280029296875,
+                    22.462499618530275,
+                    4094.9599609375
                 ],
                 [
-                    2598.87,
-                    22.63,
+                    2598.8701171875,
+                    22.6299991607666,
                     4312.5
                 ]
             ]
@@ -1107,6 +1238,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -1128,12 +1260,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1178,6 +1311,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -1199,12 +1333,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1269,6 +1404,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -1290,12 +1426,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1335,6 +1472,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -1356,12 +1494,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1481,6 +1620,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -1502,12 +1642,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1782,6 +1923,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -1803,12 +1945,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -1848,6 +1991,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -1869,12 +2013,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -2074,6 +2219,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -2095,12 +2241,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -2625,6 +2772,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -2646,12 +2794,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -2931,6 +3080,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -2952,12 +3102,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -2997,6 +3148,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -3018,12 +3170,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -3413,6 +3566,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -3434,12 +3588,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -4104,6 +4259,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -4125,12 +4281,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5180,6 +5337,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -5201,12 +5359,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5286,6 +5445,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -5307,38 +5467,39 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    10988.9,
-                    5.38,
-                    10222.3
+                    10988.900390625,
+                    5.380000114440918,
+                    10222.2998046875
                 ],
                 [
-                    11014.4,
-                    5.3925,
+                    11014.400390625,
+                    5.392499923706055,
                     10267.5
                 ],
                 [
-                    10992.8,
-                    5.58179,
-                    10295.8
+                    10992.7998046875,
+                    5.581789970397949,
+                    10295.7998046875
                 ],
                 [
-                    10964.3,
-                    5.58181,
-                    10308.6
+                    10964.2998046875,
+                    5.581809997558594,
+                    10308.599609375
                 ],
                 [
-                    11006.8,
-                    4.78676,
-                    10393.7
+                    11006.7998046875,
+                    4.786759853363037,
+                    10393.7001953125
                 ]
             ]
         },
@@ -5347,6 +5508,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5368,38 +5530,39 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    11323.6,
-                    14.9925,
-                    9923.39
+                    11323.599609375,
+                    14.992500305175782,
+                    9923.3896484375
                 ],
                 [
-                    11385.2,
-                    14.9925,
-                    10068.6
+                    11385.2001953125,
+                    14.992500305175782,
+                    10068.599609375
                 ],
                 [
                     11395.5,
-                    15.5894,
-                    10065.4
+                    15.589400291442871,
+                    10065.400390625
                 ],
                 [
-                    11423.4,
-                    16.3956,
+                    11423.400390625,
+                    16.395599365234376,
                     10072.5
                 ],
                 [
-                    11353,
-                    16.3803,
-                    9899.2
+                    11353.0,
+                    16.380300521850587,
+                    9899.2001953125
                 ]
             ]
         },
@@ -5408,6 +5571,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "NBCLoadout",
             "Units": [],
@@ -5429,23 +5593,24 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 1,
-            "MaxSpreadRadius": 2,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 2.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 0,
             "Waypoints": [
                 [
                     12292.5,
-                    2.13476,
-                    9930.4
+                    2.1347599029541017,
+                    9930.400390625
                 ],
                 [
-                    12333.6,
-                    2.05976,
-                    9924.61
+                    12333.599609375,
+                    2.059760093688965,
+                    9924.6103515625
                 ]
             ]
         },
@@ -5454,6 +5619,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5475,12 +5641,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5580,6 +5747,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -5601,12 +5769,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5716,6 +5885,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -5737,12 +5907,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5777,6 +5948,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5798,12 +5970,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5812,12 +5985,12 @@
                     13216.099609375
                 ],
                 [
-                    1063.0799560546875,
+                    1063.0799560546876,
                     7.000030040740967,
                     13259.2001953125
                 ],
                 [
-                    1056.6099853515625,
+                    1056.6099853515626,
                     7.01200008392334,
                     13236.5
                 ],
@@ -5827,7 +6000,7 @@
                     13214.2998046875
                 ],
                 [
-                    868.3359985351562,
+                    868.3359985351563,
                     7.0,
                     13142.0
                 ]
@@ -5838,6 +6011,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5859,12 +6033,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -5873,12 +6048,12 @@
                     13687.400390625
                 ],
                 [
-                    1314.1400146484375,
+                    1314.1400146484376,
                     7.01200008392334,
                     13574.099609375
                 ],
                 [
-                    1091.3599853515625,
+                    1091.3599853515626,
                     7.01200008392334,
                     13559.2998046875
                 ],
@@ -5894,6 +6069,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5915,48 +6091,49 @@
             "MinDistRadius": 200.0,
             "MaxDistRadius": 350.0,
             "DespawnRadius": 450.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1634.54, 
-                    31.8451, 
-                    12663.6
+                    1634.5400390625,
+                    31.84510040283203,
+                    12663.599609375
                 ],
                 [
-                    1648.49, 
-                    31.8454, 
-                    12674.7
+                    1648.489990234375,
+                    31.845399856567384,
+                    12674.7001953125
                 ],
                 [
-                    1649.43, 
-                    31.8465, 
-                    12729.3
+                    1649.4300537109376,
+                    31.846500396728517,
+                    12729.2998046875
                 ],
                 [
-                    1663.24, 
-                    31.8469, 
-                    12749.4
+                    1663.239990234375,
+                    31.846900939941408,
+                    12749.400390625
                 ],
                 [
-                    1660.52, 
-                    31.846, 
-                    12764.3
+                    1660.52001953125,
+                    31.84600067138672,
+                    12764.2998046875
                 ],
                 [
-                    1633.58, 
-                    31.8438, 
-                    12765.2
+                    1633.5799560546876,
+                    31.843799591064454,
+                    12765.2001953125
                 ],
                 [
-                    1619.3, 
-                    31.845, 
-                    12752.9
+                    1619.300048828125,
+                    31.844999313354493,
+                    12752.900390625
                 ]
             ]
         },
@@ -5965,6 +6142,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SurvivorLoadout",
             "Units": [],
@@ -5986,48 +6164,49 @@
             "MinDistRadius": 200.0,
             "MaxDistRadius": 350.0,
             "DespawnRadius": 450.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3480.58,
-                    26.5109,
-                    12398.9
+                    3480.580078125,
+                    26.510900497436525,
+                    12398.900390625
                 ],
                 [
-                    3465.6,
-                    25.1835,
+                    3465.60009765625,
+                    25.183500289916993,
                     12404.5
                 ],
                 [
-                    3488.51,
-                    25.2182,
-                    12417.1
+                    3488.510009765625,
+                    25.21820068359375,
+                    12417.099609375
                 ],
                 [
-                    3505,
-                    25.3363,
-                    12418.4
+                    3505.0,
+                    25.336299896240236,
+                    12418.400390625
                 ],
                 [
-                    3488.51,
-                    25.2182,
-                    12417.1
+                    3488.510009765625,
+                    25.21820068359375,
+                    12417.099609375
                 ],
                 [
-                    3490.08,
-                    25.1985,
-                    12402.4
+                    3490.080078125,
+                    25.19849967956543,
+                    12402.400390625
                 ],
                 [
-                    3506.93,
-                    25.1985,
-                    12402.1
+                    3506.929931640625,
+                    25.19849967956543,
+                    12402.099609375
                 ]
             ]
         },
@@ -6036,6 +6215,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SniperLoadout",
             "Units": [],
@@ -6047,8 +6227,8 @@
             "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": 0.85,
-            "AccuracyMax": 0.92,
+            "AccuracyMin": 0.8500000238418579,
+            "AccuracyMax": 0.9200000166893005,
             "ThreatDistanceLimit": 650.0,
             "NoiseInvestigationDistanceLimit": 300.0,
             "DamageMultiplier": -1.0,
@@ -6057,18 +6237,19 @@
             "MinDistRadius": 350.0,
             "MaxDistRadius": 650.0,
             "DespawnRadius": 700.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    916.156,
-                    53.6158,
-                    13469.8
+                    916.156005859375,
+                    53.61579895019531,
+                    13469.7998046875
                 ]
             ]
         },
@@ -6077,6 +6258,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6098,12 +6280,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -6133,6 +6316,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6154,12 +6338,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -6184,6 +6369,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SniperLoadout",
             "Units": [],
@@ -6195,8 +6381,8 @@
             "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": 0.85,
-            "AccuracyMax": 0.92,
+            "AccuracyMin": 0.8500000238418579,
+            "AccuracyMax": 0.9200000166893005,
             "ThreatDistanceLimit": 650.0,
             "NoiseInvestigationDistanceLimit": 300.0,
             "DamageMultiplier": -1.0,
@@ -6205,17 +6391,18 @@
             "MinDistRadius": 350.0,
             "MaxDistRadius": 650.0,
             "DespawnRadius": 700.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1028.59,
-                    51.3344,
+                    1028.5899658203126,
+                    51.33440017700195,
                     15245.0
                 ]
             ]
@@ -6225,6 +6412,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SniperLoadout",
             "Units": [],
@@ -6236,8 +6424,8 @@
             "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": 0.85,
-            "AccuracyMax": 0.92,
+            "AccuracyMin": 0.8500000238418579,
+            "AccuracyMax": 0.9200000166893005,
             "ThreatDistanceLimit": 650.0,
             "NoiseInvestigationDistanceLimit": 300.0,
             "DamageMultiplier": -1.0,
@@ -6246,18 +6434,19 @@
             "MinDistRadius": 350.0,
             "MaxDistRadius": 650.0,
             "DespawnRadius": 700.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1233.63,
-                    40.2445,
-                    15638.4
+                    1233.6300048828126,
+                    40.24449920654297,
+                    15638.400390625
                 ]
             ]
         },
@@ -6266,6 +6455,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "RANDOM",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6287,28 +6477,29 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    9938.93,
-                    26.7472,
-                    12758.8
+                    9938.9296875,
+                    26.74720001220703,
+                    12758.7998046875
                 ],
                 [
                     10101.5,
-                    22.7991,
-                    12738
+                    22.799100875854493,
+                    12738.0
                 ],
                 [
-                    10291.2,
-                    6.30005,
-                    12507.1
+                    10291.2001953125,
+                    6.300049781799316,
+                    12507.099609375
                 ]
             ]
         },
@@ -6317,6 +6508,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SniperLoadout",
             "Units": [],
@@ -6328,8 +6520,8 @@
             "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": 0.85,
-            "AccuracyMax": 0.92,
+            "AccuracyMin": 0.8500000238418579,
+            "AccuracyMax": 0.9200000166893005,
             "ThreatDistanceLimit": 750.0,
             "NoiseInvestigationDistanceLimit": 350.0,
             "DamageMultiplier": -1.0,
@@ -6338,18 +6530,19 @@
             "MinDistRadius": 375.0,
             "MaxDistRadius": 850.0,
             "DespawnRadius": 950.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    10018.8,
-                    39.7009,
-                    12418.9
+                    10018.7998046875,
+                    39.70090103149414,
+                    12418.900390625
                 ]
             ]
         },
@@ -6358,6 +6551,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6379,22 +6573,23 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    9811.9,
-                    22.2289,
-                    12533.4
+                    9811.900390625,
+                    22.228900909423829,
+                    12533.400390625
                 ],
                 [
-                    9969.08,
-                    6.31409,
+                    9969.080078125,
+                    6.314089775085449,
                     12948.5
                 ]
             ]
@@ -6404,6 +6599,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "PoliceLoadout",
             "Units": [],
@@ -6425,33 +6621,34 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    15774.7,
-                    9.45253,
-                    4408.54
+                    15774.7001953125,
+                    9.452529907226563,
+                    4408.5400390625
                 ],
                 [
-                    15691.2,
-                    16.4901,
-                    4501.08
+                    15691.2001953125,
+                    16.490100860595704,
+                    4501.080078125
                 ],
                 [
-                    15647.2,
-                    14.9589,
-                    4686.91
+                    15647.2001953125,
+                    14.958900451660157,
+                    4686.91015625
                 ],
                 [
-                    15663.2,
-                    21.5806,
-                    4875.08
+                    15663.2001953125,
+                    21.58060073852539,
+                    4875.080078125
                 ]
             ]
         },
@@ -6460,6 +6657,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6481,42 +6679,43 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    8613.61,
-                    9.59149,
-                    15449.1
+                    8613.6103515625,
+                    9.591489791870118,
+                    15449.099609375
                 ],
                 [
-                    8966.12,
-                    7.95637,
-                    15248.2
+                    8966.1201171875,
+                    7.956369876861572,
+                    15248.2001953125
                 ],
                 [
-                    9251.54,
-                    54.2393,
-                    15542.6
+                    9251.5400390625,
+                    54.23929977416992,
+                    15542.599609375
                 ],
                 [
-                    9372.47,
-                    49.343,
-                    15435.9
+                    9372.4697265625,
+                    49.34299850463867,
+                    15435.900390625
                 ],
                 [
-                    9632.82,
-                    49.343,
-                    15263.2
+                    9632.8203125,
+                    49.34299850463867,
+                    15263.2001953125
                 ],
                 [
-                    9848.24,
-                    52.2501,
+                    9848.240234375,
+                    52.250099182128909,
                     15118.5
                 ]
             ]
@@ -6526,6 +6725,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6547,12 +6747,13 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
@@ -6562,7 +6763,7 @@
                 ],
                 [
                     9223.349609375,
-                    47.542701721191406,
+                    47.542701721191409,
                     15280.599609375
                 ],
                 [
@@ -6572,12 +6773,12 @@
                 ],
                 [
                     8846.3701171875,
-                    49.143001556396484,
+                    49.143001556396487,
                     15535.099609375
                 ],
                 [
                     8875.6396484375,
-                    49.219200134277344,
+                    49.219200134277347,
                     15686.900390625
                 ]
             ]
@@ -6587,6 +6788,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -6608,38 +6810,39 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    15858.3,
-                    16.573,
-                    4586.61
+                    15858.2998046875,
+                    16.572999954223634,
+                    4586.60986328125
                 ],
                 [
-                    15864.3,
-                    16.7537,
-                    4655.47
+                    15864.2998046875,
+                    16.753700256347658,
+                    4655.47021484375
                 ],
                 [
-                    15851.3,
-                    16.4851,
-                    4741.21
+                    15851.2998046875,
+                    16.48509979248047,
+                    4741.2099609375
                 ],
                 [
-                    15851.4,
-                    24.6609,
-                    4824.19
+                    15851.400390625,
+                    24.660900115966798,
+                    4824.18994140625
                 ],
                 [
-                    15816.7,
-                    39.8938,
-                    4937.11
+                    15816.7001953125,
+                    39.893798828125,
+                    4937.10986328125
                 ]
             ]
         },
@@ -6648,6 +6851,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "Column",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "SniperLoadout",
             "Units": [],
@@ -6659,8 +6863,8 @@
             "CanBeLooted": 0,
             "UnlimitedReload": 1,
             "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": 0.85,
-            "AccuracyMax": 0.92,
+            "AccuracyMin": 0.8500000238418579,
+            "AccuracyMax": 0.9200000166893005,
             "ThreatDistanceLimit": 750.0,
             "NoiseInvestigationDistanceLimit": 500.0,
             "DamageMultiplier": -1.0,
@@ -6669,18 +6873,19 @@
             "MinDistRadius": 350.0,
             "MaxDistRadius": 650.0,
             "DespawnRadius": 700.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    15652.4,
-                    55.9679,
-                    4459.13
+                    15652.400390625,
+                    55.967899322509769,
+                    4459.1298828125
                 ]
             ]
         },
@@ -6689,6 +6894,7 @@
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "UnarmedLoadout",
             "Units": [],
@@ -6710,76 +6916,78 @@
             "MinDistRadius": 150.0,
             "MaxDistRadius": 1000.0,
             "DespawnRadius": 1050.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 5400.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    7547.54,
-                    5.26953,
-                    1683.12
+                    7547.5400390625,
+                    5.269529819488525,
+                    1683.1199951171876
                 ],
                 [
-                    7166.74,
-                    7.93,
-                    1585.68
+                    7166.740234375,
+                    7.929999828338623,
+                    1585.6800537109376
                 ],
                 [
-                    6998.91,
-                    7.27392,
-                    1523.16
+                    6998.91015625,
+                    7.273920059204102,
+                    1523.1600341796876
                 ],
                 [
-                    6680.13,
-                    2.76,
-                    1463.28
+                    6680.1298828125,
+                    2.759999990463257,
+                    1463.280029296875
                 ],
                 [
-                    6420.68,
-                    2.76,
-                    1356.95
+                    6420.68017578125,
+                    2.759999990463257,
+                    1356.949951171875
                 ],
                 [
-                    6470.67,
-                    21.2869,
-                    1501.69
+                    6470.669921875,
+                    21.28689956665039,
+                    1501.68994140625
                 ],
                 [
-                    6676.1,
-                    26.8024,
-                    1761.19
+                    6676.10009765625,
+                    26.802400588989259,
+                    1761.18994140625
                 ],
                 [
-                    7137.45,
-                    43.1227,
-                    1775.01
+                    7137.4501953125,
+                    43.12269973754883,
+                    1775.010009765625
                 ],
                 [
-                    7237.36,
-                    23.9629,
-                    1953.33
+                    7237.35986328125,
+                    23.962900161743165,
+                    1953.3299560546876
                 ],
                 [
-                    7190.24,
-                    19.7544,
-                    1706.97
+                    7190.240234375,
+                    19.7544002532959,
+                    1706.969970703125
                 ],
                 [
-                    7448.31,
-                    14.4503,
-                    1665.35
+                    7448.31005859375,
+                    14.450300216674805,
+                    1665.3499755859376
                 ]
-            ]                
+            ]
         },
         {
             "Name": "Mountainville-Ridge",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -6801,41 +7009,43 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    6233.33,
-                    121.846,
-                    8742.69
+                    6233.330078125,
+                    121.84600067138672,
+                    8742.6904296875
                 ],
                 [
-                    6318.86,
-                    128.268,
-                    8775.29
+                    6318.85986328125,
+                    128.26800537109376,
+                    8775.2900390625
                 ],
                 [
-                    6433.7,
-                    118.727,
+                    6433.7001953125,
+                    118.72699737548828,
                     8781.75
                 ],
                 [
-                    6471.78,
-                    111.006,
-                    8787.56
+                    6471.77978515625,
+                    111.00599670410156,
+                    8787.5595703125
                 ]
-            ]                
+            ]
         },
         {
             "Name": "Mountainville-SouthBridge",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -6857,31 +7067,33 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    5949.02,
-                    4.6777,
-                    8432.13
+                    5949.02001953125,
+                    4.677700042724609,
+                    8432.1298828125
                 ],
                 [
-                    5892.96,
-                    4.88529,
-                    8380.35
+                    5892.9599609375,
+                    4.885290145874023,
+                    8380.349609375
                 ]
-            ]                
+            ]
         },
         {
             "Name": "Mountainville-NorthBridge",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -6903,31 +7115,33 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    5440.55,
-                    5.01,
-                    9182.27
+                    5440.5498046875,
+                    5.010000228881836,
+                    9182.26953125
                 ],
                 [
-                    5351.83,
-                    5.00575,
-                    9182.47
+                    5351.830078125,
+                    5.0057501792907719,
+                    9182.4697265625
                 ]
-            ]                
+            ]
         },
         {
             "Name": "ParisIsland-RailBridge",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "BanditLoadout",
             "Units": [],
@@ -6949,36 +7163,38 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3176.31,
-                    5.85053,
-                    3521.04
+                    3176.31005859375,
+                    5.85053014755249,
+                    3521.0400390625
                 ],
                 [
                     3253.5,
-                    5.70081,
-                    3462.51
+                    5.700809955596924,
+                    3462.510009765625
                 ],
                 [
-                    3496.2,
-                    5.74041,
-                    3317.23
+                    3496.199951171875,
+                    5.740409851074219,
+                    3317.22998046875
                 ]
-            ]                
+            ]
         },
         {
             "Name": "RCFI-BridgeNBC",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "NBCLoadout",
             "Units": [],
@@ -7000,26 +7216,28 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3883.62,
-                    6.51223,
-                    10442.6
+                    3883.6201171875,
+                    6.512229919433594,
+                    10442.599609375
                 ]
-            ]                
+            ]
         },
         {
             "Name": "EastbrookBridge",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "NBCLoadout",
             "Units": [],
@@ -7041,36 +7259,38 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
-            "Chance": 0.85,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
+            "Chance": 0.8500000238418579,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    12145.7,
-                    2.49759,
-                    7810.54
+                    12145.7001953125,
+                    2.4975900650024416,
+                    7810.5400390625
                 ],
                 [
-                    12298.7,
-                    2.7293,
-                    7700.42
+                    12298.7001953125,
+                    2.729300022125244,
+                    7700.419921875
                 ],
                 [
-                    12524.4,
-                    2.04488,
-                    7636.3
+                    12524.400390625,
+                    2.044879913330078,
+                    7636.2998046875
                 ]
-            ]                
+            ]
         },
         {
             "Name": "ParisIslandLab",
             "Persist": 0,
             "Faction": "West",
             "Formation": "File",
+            "FormationScale": -1.0,
             "FormationLooseness": 0.5,
             "Loadout": "GorkaLoadout",
             "Units": [],
@@ -7092,25 +7312,26 @@
             "MinDistRadius": -2.0,
             "MaxDistRadius": -2.0,
             "DespawnRadius": -2.0,
-            "MinSpreadRadius": 0,
-            "MaxSpreadRadius": 0,
+            "MinSpreadRadius": 0.0,
+            "MaxSpreadRadius": 0.0,
             "Chance": 1.0,
             "WaypointInterpolation": "",
             "DespawnTime": 1800.0,
             "RespawnTime": 6000.0,
+            "LoadBalancingCategory": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2699.12,
-                    26.9909,
-                    3454.84
+                    2699.1201171875,
+                    26.99090003967285,
+                    3454.840087890625
                 ],
                 [
-                    2727.88,
-                    22.4897,
-                    3434.21
+                    2727.8798828125,
+                    22.489700317382814,
+                    3434.2099609375
                 ]
-            ]                
+            ]
         }
     ]
 }

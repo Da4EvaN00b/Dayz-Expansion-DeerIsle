@@ -1060,6 +1060,10 @@
     <input name="UAExpansionPartyHUDToggle">
         <btn name="kMultiply" />
     </input>
+    <input name="UAExpansionConfirm">
+        <btn name="kReturn" />
+        <btn name="kNumpadEnter" />
+    </input>
     <input name="UAExpansionMapDeleteMarker">
         <btn name="kDelete" />
     </input>
