@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
+
+
 <!--  ___________ YOU CAN FIND DETAILED INSTRUCTIONS in PvZmoD_CustomisableZombies_HELP.txt file ___________  -->
 <!-- See the new Features at the end of the file -->
-
+
+
 <types>
 	<type name="File_Name">
         <Customisable_Zombies_List 		File_Name = "PvZmoD_CustomisableZombies_Characteristics.xml"/>	<!-- don't forget .xml extension  -->
@@ -33,14 +35,14 @@
 	</type>
 	
 	<type name="Zombies_Caracteristics">
-        <Zombies_Health_Ratio						Day	= "1.0"	Night = "1.0"/>	<!-- [Decimal 0.0 to infinite] -->
-        <Zombies_Strength_Ratio						Day	= "1.0"	Night = "1.0"/> <!-- [Decimal 0.0 to infinite] Except the bleeding chance -->
-        <Zombies_Speed_Ratio						Day	= "1.0"	Night = "1.0"/> <!-- [Decimal 0.0 to infinite] -->
+        <Zombies_Health_Ratio						Day	= "1.10"	Night = "1.25"/>	<!-- [Decimal 0.0 to infinite] -->
+        <Zombies_Strength_Ratio						Day	= "1.15"	Night = "1.35"/> <!-- [Decimal 0.0 to infinite] Except the bleeding chance -->
+        <Zombies_Speed_Ratio						Day	= "1.0"	Night = "1.20"/> <!-- [Decimal 0.0 to infinite] -->
 		<Zombies_Clamp_Speed_Mini					Day	= "0.0"	Night = "0.0"/> <!-- [Decimal 1.5=Walk / 2.5=Run / 3.0=Sprint] -->
         <Zombies_Clamp_Speed_Maxi					Day	= "3.0"	Night = "3.0"/> <!-- [Decimal 1.5=Walk / 2.5=Run / 3.0=Sprint] -->
         <Zombies_Hearing_Standing_Players_Ratio		Day	= "1.0"	Night = "1.0"/> <!-- [Decimal 0.0 to 1.0] -->
         <Zombies_Hearing_Crouching_Players_Ratio	Day	= "1.0"	Night = "1.0"/> <!-- [Decimal 0.0 to 1.0] -->
-        <Zombies_Size_Ratio							Day	= "1.0"	Night = "1.0"/> <!-- [Decimal 0.01 to infinite] -->
+        <Zombies_Size_Ratio							Day	= "1.0"	Night = "1.1"/> <!-- [Decimal 0.01 to infinite] -->
         <Zombies_Maximum_Size_In_Buildings			Value	= "1.4"/>	 		<!-- [Decimal 0.01 to infinite] -->
 	</type>
 	
@@ -120,6 +122,8 @@
 		<Attack_Stopped_Vehicles	Moving_Vehicles_Too		= "1"		/>	<!-- Integer [0 or 1] -->
  
   	</type>
-</types>
+</types>
+
 <!--  ___________ YOU CAN FIND DETAILED INSTRUCTIONS in PvZmoD_CustomisableZombies_HELP.txt file ___________  -->
-
+
+

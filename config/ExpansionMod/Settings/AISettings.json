@@ -4,7 +4,7 @@
     "AccuracyMax": 0.8500000238418579,
     "ThreatDistanceLimit": 350.0,
     "NoiseInvestigationDistanceLimit": 750.0,
-    "DamageMultiplier": 1.149999976158142,
+    "DamageMultiplier": 1.20,
     "DamageReceivedMultiplier": 1.0,
     "Admins": [
         "76561198081075225"
