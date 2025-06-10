@@ -21,39 +21,32 @@
                 "MaxPatrols": 35
             }
         ],
-        "Example": [
-            {
-                "MinPlayers": 0,
-                "MaxPlayers": 255,
-                "MaxPatrols": -1
-            }
-        ],
         "Quest": [
             {
                 "MinPlayers": 0,
                 "MaxPlayers": 255,
-                "MaxPatrols": -1
+                "MaxPatrols": 30
             }
         ],
         "ObjectPatrol": [
             {
                 "MinPlayers": 0,
                 "MaxPlayers": 255,
-                "MaxPatrols": 10
+                "MaxPatrols": 30
             }
         ],
         "HelicopterWreck": [
             {
                 "MinPlayers": 0,
                 "MaxPlayers": 255,
-                "MaxPatrols": 3
+                "MaxPatrols": 30
             }
         ],
         "ContaminatedArea": [
             {
                 "MinPlayers": 0,
                 "MaxPlayers": 255,
-                "MaxPatrols": 3
+                "MaxPatrols": 30
             }
         ],
         "Patrol": [
