@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <types>
     <type name="SNAFU_NPKPBIPOD">
-        <nominal>22</nominal>
+        <nominal>5</nominal>
         <restock>1800</restock>
         <lifetime>7200</lifetime>
-        <min>18</min>
+        <min>3</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -18,10 +18,10 @@
         <value name="Tier9" />
         </type>
     <type name="Snafu_pkp_250RND_Mag">
-        <nominal>18</nominal>
+        <nominal>5</nominal>
         <restock>1800</restock>
         <lifetime>7200</lifetime>
-        <min>14</min>
+        <min>3</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -35,6 +35,94 @@
         <value name="Tier9" />
         </type>
     <type name="Snafu_pkp_Black_GUN">
+        <nominal>3</nominal>
+        <restock>1800</restock>
+        <lifetime>7200</lifetime>
+        <min>2</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
+        <category name="weapons" />
+        <usage name="Military" />
+        <value name="Tier4" />
+        <value name="Tier6" />
+        <value name="Tier7" />
+        <value name="Tier8" />
+        <value name="Tier9" />
+    </type>
+    <type name="SNAFUKivaari_Tan_GUN">
+        <nominal>3</nominal>
+        <restock>1800</restock>
+        <lifetime>7200</lifetime>
+        <min>2</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="1" />
+        <category name="weapons" />
+        <usage name="Military" />
+        <value name="Tier4" />
+        <value name="Tier6" />
+        <value name="Tier7" />
+        <value name="Tier8" />
+        <value name="Tier9" />
+    </type>
+    <type name="SNAFUKivaari_10rdMag">
+        <nominal>12</nominal>
+        <restock>1800</restock>
+        <lifetime>7200</lifetime>
+        <min>9</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
+        <category name="weapons" />
+        <usage name="Military" />
+        <usage name="Police" />
+        <value name="Tier4" />
+        <value name="Tier6" />
+        <value name="Tier7" />
+        <value name="Tier8" />
+        <value name="Tier9" />
+        </type>
+    <type name="SNAFUKivaari_25rdMag">
+        <nominal>5</nominal>
+        <restock>1800</restock>
+        <lifetime>7200</lifetime>
+        <min>3</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="1" />
+        <category name="weapons" />
+        <usage name="Military" />
+        <usage name="Police" />
+        <value name="Tier4" />
+        <value name="Tier6" />
+        <value name="Tier7" />
+        <value name="Tier8" />
+        <value name="Tier9" />
+        </type>
+    <type name="SNAFUKivaari_Black_GUN">
+        <nominal>2</nominal>
+        <restock>1800</restock>
+        <lifetime>7200</lifetime>
+        <min>1</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
+        <category name="weapons" />
+        <usage name="Military" />
+        <usage name="Police" />
+        <value name="Tier4" />
+        <value name="Tier6" />
+        <value name="Tier7" />
+        <value name="Tier8" />
+        <value name="Tier9" />
+        </type>
+    <type name="SNAFU_ModBipod">
         <nominal>8</nominal>
         <restock>1800</restock>
         <lifetime>7200</lifetime>
@@ -50,100 +138,12 @@
         <value name="Tier7" />
         <value name="Tier8" />
         <value name="Tier9" />
-    </type>
-    <type name="SNAFUKivaari_Tan_GUN">
-        <nominal>5</nominal>
-        <restock>1800</restock>
-        <lifetime>7200</lifetime>
-        <min>3</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="1" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <value name="Tier4" />
-        <value name="Tier6" />
-        <value name="Tier7" />
-        <value name="Tier8" />
-        <value name="Tier9" />
-    </type>
-    <type name="SNAFUKivaari_10rdMag">
-        <nominal>20</nominal>
-        <restock>1800</restock>
-        <lifetime>7200</lifetime>
-        <min>18</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <usage name="Police" />
-        <value name="Tier4" />
-        <value name="Tier6" />
-        <value name="Tier7" />
-        <value name="Tier8" />
-        <value name="Tier9" />
-        </type>
-    <type name="SNAFUKivaari_25rdMag">
-        <nominal>12</nominal>
-        <restock>1800</restock>
-        <lifetime>7200</lifetime>
-        <min>8</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="1" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <usage name="Police" />
-        <value name="Tier4" />
-        <value name="Tier6" />
-        <value name="Tier7" />
-        <value name="Tier8" />
-        <value name="Tier9" />
-        </type>
-    <type name="SNAFUKivaari_Black_GUN">
-        <nominal>12</nominal>
-        <restock>1800</restock>
-        <lifetime>7200</lifetime>
-        <min>8</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <usage name="Police" />
-        <value name="Tier4" />
-        <value name="Tier6" />
-        <value name="Tier7" />
-        <value name="Tier8" />
-        <value name="Tier9" />
-        </type>
-    <type name="SNAFU_ModBipod">
-        <nominal>25</nominal>
-        <restock>1800</restock>
-        <lifetime>7200</lifetime>
-        <min>20</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_hoarder="0" count_in_player="1" count_in_map="0" count_in_cargo="0" crafted="0" deloot="0" />
-        <category name="weapons" />
-        <usage name="Military" />
-        <value name="Tier4" />
-        <value name="Tier6" />
-        <value name="Tier7" />
-        <value name="Tier8" />
-        <value name="Tier9" />
         </type>
     <type name="SNAFU_Tango6T_Black">
-        <nominal>25</nominal>
+        <nominal>12</nominal>
         <restock>1800</restock>
         <lifetime>7200</lifetime>
-        <min>22</min>
+        <min>9</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -155,10 +155,10 @@
         <value name="Tier5" />
         </type>
     <type name="SNAFU_Tango6T_Tan">
-        <nominal>25</nominal>
+        <nominal>12</nominal>
         <restock>1800</restock>
         <lifetime>7200</lifetime>
-        <min>22</min>
+        <min>9</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
