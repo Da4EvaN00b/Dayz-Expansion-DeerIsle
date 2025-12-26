@@ -7,9 +7,9 @@
     "GravecrossTimeThreshold": 1200.0,
     "GravecrossSpawnTimeDelay": 180.0,
     "Mapping": {
-        "UseCustomMappingModule": 0,
+        "UseCustomMappingModule": 1,
         "Mapping": [],
-        "BuildingInteriors": 0,
+        "BuildingInteriors": 1,
         "Interiors": [
             "Land_Barn_Brick2",
             "Land_Barn_Metal_Big",
@@ -35,10 +35,10 @@
         ],
         "BuildingIvys": 0
     },
-    "EnableLamps": 3,
+    "EnableLamps": 1,
     "LampAmount_OneInX": 3,
     "LampSelectionMode": "FARTHEST_RANDOM",
-    "EnableGenerators": 0,
+    "EnableGenerators": 1,
     "EnableLighthouses": 1,
     "EnableHUDNightvisionOverlay": 1,
     "DisableMagicCrosshair": 0,

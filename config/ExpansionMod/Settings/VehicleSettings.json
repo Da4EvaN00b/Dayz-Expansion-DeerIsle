@@ -1,8 +1,8 @@
 {
     "m_Version": 21,
     "VehicleSync": 0,
-    "VehicleRequireKeyToStart": 1,
-    "VehicleRequireAllDoors": 1,
+    "VehicleRequireKeyToStart": 0,
+    "VehicleRequireAllDoors": 0,
     "VehicleLockedAllowInventoryAccess": 0,
     "VehicleLockedAllowInventoryAccessWithoutDoors": 1,
     "MasterKeyPairingMode": 2,
@@ -23,7 +23,7 @@
     "VehicleSpeedDamageMultiplier": 1.0,
     "VehicleRoadKillDamageMultiplier": 1.0,
     "CollisionDamageIfEngineOff": 0,
-    "CollisionDamageMinSpeedKmh": 30.0,
+    "CollisionDamageMinSpeedKmh": 25.0,
     "CanChangeLock": 0,
     "ChangeLockTools": [
         "Screwdriver"
