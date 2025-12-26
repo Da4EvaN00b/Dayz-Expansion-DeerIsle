@@ -37,4 +37,27 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<default name="save_types_startup" value="true"/>
 		<default name="randomloot_deloot_perevent" value="3" />
 	</defaults>
+
+	<!-- dayz expansion -->
+	<ce folder="expansion_ce">
+		<file name="expansion_types.xml" type="types" />
+		<file name="expansion_spawnabletypes.xml" type="spawnabletypes" />
+		<file name="expansion_events.xml" type="events" />
+	</ce>
+
+	<!-- MMG military gear -->
+	<ce folder="db/mmg">
+		<file name="mmg_cfgspawnabletypes.xml" type="spawnabletypes" />
+		<file name="mmg_types_ADMINGEAR.xml" type="types" />
+		<file name="mmg_bare_types.xml" type="types" />
+	</ce>
+	<!-- End mmg material -->
+	
+	<!-- snafu guns -->
+	<ce folder="db/snafu">
+		<file name="snafuspawnabletypes25percent.xml" type="spawnabletypes" />
+		<file name="SNAFU_bare_types.xml" type="types" />
+	</ce>
+	<!-- end of snafu guns -->
+
 </economycore>
