@@ -48,6 +48,8 @@
         <usage name="Mine"/>
         <usage name="Temple"/>
         <usage name="Historical"/>		
+		<usage name="NBCSource" />
+		<usage name="Punchedcard"/>
 	</usageflags>
 	<valueflags>
 		<value name="Tier1"/>
