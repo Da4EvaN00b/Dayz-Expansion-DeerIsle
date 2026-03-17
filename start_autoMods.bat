@@ -15,7 +15,7 @@ if exist "%SCRIPT_DIR%.env" (
 set "ENABLE_WORKSHOP_UPDATES=1"
 
 ::Name for the CMD window
-set "serverName=KRONJON-Hashima-PvE"
+set "serverName=KRONJON-DeerIsle-PvE"
 ::Server Port
 set "serverPort=2302"
 ::Server config
@@ -64,7 +64,7 @@ if "%ENABLE_WORKSHOP_UPDATES%"=="1" if "%UPDATE_ON_RESTART%"=="1" call :update_m
 start "DayZ Server" /min /wait DayZServer_x64.exe ^
   -config=%serverConfig% ^
   "-mod=%mods%" ^
-  "-serverMod=_@Heatmap;_@SpawnerBubaku" ^
+  "-serverMod=_@Heatmap" ^
   -port=%serverPort% ^
   -profiles=%serverProfile% ^
   -cpuCount=%serverCPU% ^
