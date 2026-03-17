@@ -900,11 +900,6 @@
         <btn name="mWheelDown" />
         <btn name="kApostrophe" />
     </input>
-    <input name="UADeerisleCreditsToggle">
-        <btn name="kF9">
-            <event name="press" />
-        </btn>
-    </input>
     <input name="UACOTModuleToggleCOT">
         <btn name="kEnd" />
     </input>
@@ -945,6 +940,13 @@
         <btn name="kU" />
     </input>
     <input name="UAPlayerModuleInvisibility" />
+    <input name="UAPlayerModuleCanBeTargetedByAI" />
+    <input name="UAPlayerModuleUnlimitedStamina" />
+    <input name="UAPlayerModuleUnlimitedAmmo" />
+    <input name="UAPlayerModuleAdminNV" />
+    <input name="UAPlayerModuleStopSpectating">
+        <btn name="kNumpad1" />
+    </input>
     <input name="UACOTToggleButtons">
         <btn name="kY" />
     </input>
@@ -1009,49 +1011,6 @@
         </btn>
     </input>
     <input name="DI_ToggleAutoRun">
-        <btn name="kAdd" />
-    </input>
-    <input name="UARFMOSQCyclicForward">
-        <btn name="kW" />
-        <btn name="ps4LeftThumbUp" />
-    </input>
-    <input name="UARFMOSQCyclicBack">
-        <btn name="kS" />
-        <btn name="ps4LeftThumbDown" />
-    </input>
-    <input name="UARFMOSQCyclicLeft">
-        <btn name="kA" />
-        <btn name="ps4LeftThumbLeft" />
-    </input>
-    <input name="UARFMOSQCyclicRight">
-        <btn name="kD" />
-        <btn name="ps4LeftThumbRight" />
-    </input>
-    <input name="UARFMOSQPedalLeft">
-        <btn name="kQ" />
-        <btn name="ps4ShoulderLeft" />
-    </input>
-    <input name="UARFMOSQPedalRight">
-        <btn name="kE" />
-        <btn name="ps4ShoulderRight" />
-    </input>
-    <input name="UARFMOSQCollectiveUp">
-        <btn name="kLShift" />
-        <btn name="mWheelUp" />
-        <btn name="ps4A" />
-    </input>
-    <input name="UARFMOSQCollectiveDown">
-        <btn name="kZ" />
-        <btn name="mWheelDown" />
-        <btn name="ps4B" />
-    </input>
-    <input name="UARFMOSQLandingLights">
-        <btn name="kL" />
-    </input>
-    <input name="UARFMOSQToggleHUD">
-        <btn name="kB" />
-    </input>
-    <input name="UARFMOSQRecover">
         <btn name="kAdd" />
     </input>
     <input name="UAExpansionMapDeleteMarker">

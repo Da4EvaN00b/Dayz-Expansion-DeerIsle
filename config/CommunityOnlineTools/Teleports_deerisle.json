@@ -1,18 +1,16 @@
 {
     "Types": [
         "ALL",
-        "",
         "Airport",
-        "CityCapi",
-        "CityCapita",
+        "City",
+        "CityCapital",
         "Hill",
         "Local",
-        "NameLocal",
-        "NameVillage",
+        "Marine",
         "RockArea",
         "StrongpointArea",
         "ViewPoint",
-        "Villag"
+        "Village"
     ],
     "Locations": [
         {
@@ -26,7 +24,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Marine",
             "Name": "Archipelago",
             "Position": [
                 2258.340087890625,
@@ -36,7 +34,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Area 42",
             "Position": [
                 13379.0498046875,
@@ -46,7 +44,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Asheville",
             "Position": [
                 7311.22998046875,
@@ -66,7 +64,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Bayville",
             "Position": [
                 10178.3603515625,
@@ -106,7 +104,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Crotch Island",
             "Position": [
                 10812.1103515625,
@@ -136,7 +134,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "Villag",
+            "Type": "Village",
             "Name": "Duskar",
             "Position": [
                 7841.8798828125,
@@ -146,7 +144,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "East Harbor",
             "Position": [
                 11363.580078125,
@@ -156,7 +154,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Eastbrook",
             "Position": [
                 10417.400390625,
@@ -166,7 +164,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Fairfield",
             "Position": [
                 9978.330078125,
@@ -176,7 +174,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Fishers Camp",
             "Position": [
                 10343.419921875,
@@ -186,7 +184,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Georgestown",
             "Position": [
                 4716.6298828125,
@@ -196,7 +194,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Greenville",
             "Position": [
                 4744.7099609375,
@@ -216,7 +214,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "City",
             "Name": "Hazelands",
             "Position": [
                 4538.47998046875,
@@ -236,7 +234,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Industrial",
             "Position": [
                 6787.0498046875,
@@ -246,7 +244,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "NameLocal",
+            "Type": "Local",
             "Name": "KMUC",
             "Position": [
                 7226.10986328125,
@@ -256,7 +254,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Kushville",
             "Position": [
                 7533.60009765625,
@@ -266,7 +264,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "NameVillage",
+            "Type": "Village",
             "Name": "Milo",
             "Position": [
                 6545.97998046875,
@@ -276,7 +274,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "NameLocal",
+            "Type": "Local",
             "Name": "Mine",
             "Position": [
                 11148.4599609375,
@@ -286,7 +284,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Montville",
             "Position": [
                 9370.8896484375,
@@ -296,7 +294,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Mountainville",
             "Position": [
                 7291.0400390625,
@@ -306,7 +304,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "City",
             "Name": "North Haven",
             "Position": [
                 519.6900024414063,
@@ -316,7 +314,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "City",
             "Name": "Oceanville",
             "Position": [
                 10258.6298828125,
@@ -326,7 +324,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Old Town",
             "Position": [
                 1840.6099853515626,
@@ -336,7 +334,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Oldfield",
             "Position": [
                 6114.18994140625,
@@ -376,7 +374,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "CityCapi",
+            "Type": "CityCapital",
             "Name": "Portland",
             "Position": [
                 6100.009765625,
@@ -386,7 +384,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Powerplant",
             "Position": [
                 4790.47998046875,
@@ -396,7 +394,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Prison",
             "Position": [
                 5470.16015625,
@@ -436,7 +434,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Sandy Bay",
             "Position": [
                 5347.7099609375,
@@ -446,7 +444,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Scouts Camp",
             "Position": [
                 4930.43994140625,
@@ -456,7 +454,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Scouts Camp",
             "Position": [
                 4930.43994140625,
@@ -466,7 +464,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Sheep Island",
             "Position": [
                 11941.830078125,
@@ -476,7 +474,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Smallville",
             "Position": [
                 10355.0400390625,
@@ -496,7 +494,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "CityCapita",
+            "Type": "CityCapital",
             "Name": "Stonington",
             "Position": [
                 6829.419921875,
@@ -506,7 +504,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Marine",
             "Name": "Stonington Harbor",
             "Position": [
                 6839.2998046875,
@@ -526,7 +524,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Suburbs South",
             "Position": [
                 7206.72021484375,
@@ -536,7 +534,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Sunset Cross",
             "Position": [
                 6580.81982421875,
@@ -556,7 +554,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Swansisland",
             "Position": [
                 1120.0,
@@ -576,7 +574,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Threepwood",
             "Position": [
                 9072.8896484375,
@@ -586,7 +584,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "City",
             "Name": "Waldoboro",
             "Position": [
                 8730.990234375,
@@ -596,7 +594,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Warren Cove",
             "Position": [
                 7050.68017578125,
@@ -606,7 +604,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Village",
             "Name": "Westbrook",
             "Position": [
                 3302.840087890625,
@@ -616,7 +614,7 @@
             "Radius": 4.0
         },
         {
-            "Type": "",
+            "Type": "Local",
             "Name": "Woodworking Industrial",
             "Position": [
                 4446.97021484375,

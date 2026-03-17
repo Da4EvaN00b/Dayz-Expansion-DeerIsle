@@ -77,10 +77,6 @@
         "ttr700mag",
         "jmc_Prototype_Mag",
         "ASVAL",
-        "SVD",
-        "FAL",
-        "M4A1",
-        "M14",
         "Aug",
         "Deagle_Gold",
         "Longhorn",
@@ -155,20 +151,28 @@
         "FirstAidKit",
         "SmershBag",
         "TortillaBag",
-        "jmc_grenade_z"
+        "jmc_grenade_z",
+        "STAG_Clothing_6sh118",
+        "STAG_Clothing_CoyoteBag",
+        "STAG_Clothing_MountainBag",
+        "STAG_Clothing_Vest",
+        "STAG_Clothing_PlateCarrier",
+        "STAG_Clothing_Armband",
+        "STAG_Clothing_Boots",
+        "STAG_Clothing_TacticalGloves",
+        "STAG_Clothing_PlateCarrierHolster",
+        "STAG_Clothing_M65_Jacket",
+        "STAG_Clothing_Cargo_Pants",
+        "STAG_Clothing_Pouches"
     ],
     "divingLootListElite": [
-        "STAG_Clothing_Canteen_PT",
-        "STAG_Clothing_SmershBag_PT",
-        "STAG_Clothing_SmershVest_PT",
-        "STAG_Clothing_PlateCarrierHolster_PT",
-        "STAG_Clothing_Boots_PT",
-        "STAG_Clothing_TacticalCloves_PT",
-        "STAG_Clothing_M65_Jacket_PT",
-        "STAG_Clothing_Cargo_Pants_PT",
-        "STAG_Clothing_Pouches_PT",
-        "STAG_Clothing_Vest_PT",
-        "STAG_Clothing_PlateCarrier_PT"
+        "SVD",
+        "FAL",
+        "M4A1",
+        "M14",
+        "ttr700",
+        "jmc_Prototype_White",
+        "STAG_Clothing_ArmyBackpack"
     ],
     "containerSpawnLocations": [
         [
@@ -513,5 +517,5 @@
         ]
     ],
     "maxContainers": 4,
-    "maxLootPerContainer": 30
+    "maxLootPerContainer": 25
 }

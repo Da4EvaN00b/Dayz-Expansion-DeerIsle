@@ -3,10 +3,10 @@
         {
             "ClassName": "DivingPlayerSetting",
             "DisableDivingMode": 0,
-            "MaxLungCapacity": 3000.0,
+            "MaxLungCapacity": 1000.0,
             "LungBurnMultiplier": 1.0,
             "SprintLungBurnMultiplier": 2.0,
-            "MaxDiveDepth": 35.0,
+            "MaxDiveDepth": 350.0,
             "SwimSpeed": 0.699999988079071,
             "SwimVerticleSpeed": 0.05000000074505806
         }

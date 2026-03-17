@@ -174,11 +174,11 @@
                     "Enabled": 0
                 },
                 {
-                    "Name": "JMCommandModule",
+                    "Name": "JMVehiclesModule",
                     "Enabled": 0
                 },
                 {
-                    "Name": "JMVehiclesModule",
+                    "Name": "JMCommandModule",
                     "Enabled": 0
                 },
                 {
