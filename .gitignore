@@ -27,3 +27,4 @@ custom_scripts/roamer_plots/
 .continueignore
 .vscode/
 __pycache__/
+.mypy_cache/
