@@ -25,3 +25,4 @@ config/Heatmap/*.json
 custom_scripts/roamer_plots/
 /battleye
 .continueignore
+.vscode/
