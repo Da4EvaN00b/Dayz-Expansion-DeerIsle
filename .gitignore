@@ -26,3 +26,4 @@ custom_scripts/roamer_plots/
 /battleye
 .continueignore
 .vscode/
+__pycache__/
