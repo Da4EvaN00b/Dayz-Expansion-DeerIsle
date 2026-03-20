@@ -1,117 +1,188 @@
 #!/usr/bin/env python3
 """
-Plot AI Location positions from AILocationSettings.json on an X/Y scatter plot.
-Labels each point with its location name.
+Plot AI roaming locations from AILocationSettings.json on the Deer Isle map.
 """
 
 import json
-import matplotlib.pyplot as plt
-from matplotlib.patches import Circle
+from argparse import ArgumentParser
 from datetime import datetime
 from pathlib import Path
 
-def plot_ai_locations(json_file_path, output_dir=None):
-    """
-    Read AILocationSettings.json and create an X/Y scatter plot of all locations.
+import matplotlib.pyplot as plt
+from matplotlib.patches import Circle
 
-    Args:
-        json_file_path: Path to the AILocationSettings.json file
-        output_dir: Directory to save the output image (defaults to current directory)
-    """
-    # Read the JSON file
-    with open(json_file_path, 'r') as f:
-        data = json.load(f)
 
-    # Extract location data
-    locations = data.get('RoamingLocations', [])
+SCRIPT_DIR = Path(__file__).resolve().parent
+MPMISSIONS_DIR = SCRIPT_DIR.parent / "mpmissions"
+PREFERRED_MISSION_DIR = MPMISSIONS_DIR / "Expansion.deerisle"
+DEFAULT_MAP_SIZE = 15000.0
+DEFAULT_EXTENT = (0.0, DEFAULT_MAP_SIZE, 0.0, DEFAULT_MAP_SIZE)
+DEFAULT_BACKGROUND_IMAGE = SCRIPT_DIR / "deer_isle_background.png"
+# The image pixel dimensions do not need to match the DayZ world size.
+# Matplotlib stretches the image into these world coordinates via `extent`.
+# Deer Isle background art appears to cover a slightly larger world box than
+# the playable 0..15000 coordinates. This default keeps plot data unshifted
+# while scaling the image outward so points land further inward on the art.
+DEFAULT_BACKGROUND_WORLD_BOUNDS = (0.0, 16875.0, 0.0, 16875.0)
 
+
+def resolve_settings_path(filename):
+    preferred = PREFERRED_MISSION_DIR / "expansion" / "settings" / filename
+    if preferred.exists():
+        return preferred
+
+    candidates = sorted(MPMISSIONS_DIR.glob(f"*/expansion/settings/{filename}"))
+    return candidates[0] if candidates else None
+
+
+def load_locations(json_file_path):
+    with open(json_file_path, "r") as file_handle:
+        data = json.load(file_handle)
+
+    points = []
+    for location in data.get("RoamingLocations", []):
+        position = location.get("Position", [])
+        if len(position) < 3:
+            continue
+
+        points.append(
+            {
+                "name": location.get("Name", "Unknown"),
+                "x": position[0],
+                "z": position[2],
+                "radius": location.get("Radius", 100.0),
+            }
+        )
+
+    return points
+
+
+def plot_ai_locations(
+    json_file_path,
+    output_dir,
+    label_locations=True,
+    focus_region=None,
+    background_bounds=None,
+):
+    locations = load_locations(json_file_path)
     if not locations:
-        print("No locations found in the JSON file!")
+        print("No roaming locations found in the JSON file.")
         return
 
-    # Extract X, Y coordinates, names, and radius values
-    x_coords = []
-    y_coords = []
-    names = []
-    radii = []
+    fig, ax = plt.subplots(figsize=(12, 10), dpi=150)
+    image_bounds = background_bounds if background_bounds is not None else DEFAULT_BACKGROUND_WORLD_BOUNDS
+
+    if DEFAULT_BACKGROUND_IMAGE.exists():
+        background = plt.imread(DEFAULT_BACKGROUND_IMAGE)
+        ax.imshow(background, extent=image_bounds, origin="upper")
+    else:
+        print(f"Background image not found: {DEFAULT_BACKGROUND_IMAGE}")
 
     for location in locations:
-        position = location.get('Position', [])
-        name = location.get('Name', 'Unknown')
-        radius = location.get('Radius', 100.0)  # Default to 100 if not specified
-
-        if len(position) >= 3:
-            x = position[0]  # First coordinate
-            y = position[2]  # Third coordinate (middle is always 0)
-
-            x_coords.append(x)
-            y_coords.append(y)
-            names.append(name)
-            radii.append(radius)
-
-    # Create the plot
-    fig, ax = plt.subplots(figsize=(10, 10), dpi=100)  # 1000x1000 pixels (10 inches * 100 dpi)
-
-    # Draw circles with actual radius values (in data coordinates = meters)
-    for i in range(len(x_coords)):
-        circle = Circle((x_coords[i], y_coords[i]), radii[i],
-                       fill=True, facecolor='red', alpha=0.3,
-                       edgecolor='darkred', linewidth=1.5)
+        circle = Circle(
+            (location["x"], location["z"]),
+            location["radius"],
+            fill=False,
+            edgecolor="red",
+            linewidth=1.2,
+            alpha=0.85,
+        )
         ax.add_patch(circle)
 
-    # Plot center points for visibility
-    ax.scatter(x_coords, y_coords, c='red', s=20, alpha=0.8, edgecolors='black', linewidth=0.5, zorder=5)
+    ax.scatter(
+        [location["x"] for location in locations],
+        [location["z"] for location in locations],
+        c="red",
+        s=16,
+        alpha=0.85,
+        edgecolors="black",
+        linewidth=0.4,
+        zorder=5,
+    )
 
-    # Add labels for each point
-    for i, name in enumerate(names):
-        ax.annotate(name, (x_coords[i], y_coords[i]),
-                   fontsize=6,
-                   alpha=0.8,
-                   xytext=(3, 3),  # Offset text slightly from point
-                   textcoords='offset points',
-                   zorder=6)
+    if label_locations:
+        for location in locations:
+            ax.annotate(
+                location["name"],
+                (location["x"], location["z"]),
+                fontsize=6,
+                xytext=(3, 3),
+                textcoords="offset points",
+                bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1.5),
+                zorder=6,
+            )
 
-    # Set labels and title
-    ax.set_xlabel('X Coordinate (meters)', fontsize=12)
-    ax.set_ylabel('Y Coordinate (meters)', fontsize=12)
-    ax.set_title('AI Location Positions (circles show radius)', fontsize=14, fontweight='bold')
-
-    # Add grid for better readability
-    ax.grid(True, alpha=0.3, linestyle='--')
-
-    # Set axis limits to show full map (0-12800 meters) with some padding
-    ax.set_xlim(-500, 13000)
-    ax.set_ylim(-500, 13000)
-
-    # Make sure the plot is square with equal aspect ratio
-    ax.set_aspect('equal', adjustable='box')
-
-    # Generate timestamp for filename
-    timestamp = datetime.now().strftime('%Y%m%d%H%M')
-    output_filename = f'AILocationsPlots-{timestamp}.png'
-
-    # Determine output path
-    if output_dir:
-        output_path = Path(output_dir) / output_filename
+    if focus_region:
+        min_x, max_x, min_z, max_z = focus_region
     else:
-        output_path = Path(output_filename)
+        min_x, max_x, min_z, max_z = DEFAULT_EXTENT
 
-    # Save the figure
+    ax.set_xlim(min_x, max_x)
+    ax.set_ylim(min_z, max_z)
+    ax.set_aspect("equal", adjustable="box")
+    ax.grid(True, alpha=0.3, linestyle="--")
+    ax.set_xlabel("X Coordinate (meters)")
+    ax.set_ylabel("Z Coordinate (meters)")
+    ax.set_title("Deer Isle AI Roaming Areas")
+
+    timestamp = datetime.now().strftime("%Y%m%d%H%M")
+    output_path = Path(output_dir) / f"AILocationsPlots-{timestamp}.png"
+
     plt.tight_layout()
-    plt.savefig(output_path, dpi=100, bbox_inches='tight')
-    print(f"Plot saved to: {output_path}")
-    print(f"Total locations plotted: {len(names)}")
-
-    # Close the plot to free memory
+    plt.savefig(output_path, dpi=200, bbox_inches="tight")
     plt.close()
 
-if __name__ == '__main__':
-    # Default path to AILocationSettings.json
-    # Adjust this path if running from a different location
-    json_path = Path(__file__).parent.parent / 'mpmissions' / 'main.hashima' / 'expansion' / 'settings' / 'AILocationSettings.json'
+    print(f"Plot saved to: {output_path}")
+    print(f"Total locations plotted: {len(locations)}")
 
-    # Output to the custom_scripts directory
-    output_directory = Path(__file__).parent
 
-    print(f"Reading AI locations from: {json_path}")
-    plot_ai_locations(json_path, output_directory)
+def main():
+    parser = ArgumentParser(description="Plot AI roaming areas for Deer Isle.")
+    parser.add_argument(
+        "--json",
+        type=Path,
+        default=resolve_settings_path("AILocationSettings.json"),
+        help="Path to AILocationSettings.json.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=SCRIPT_DIR,
+        help="Directory to save the output image.",
+    )
+    parser.add_argument(
+        "--no-labels",
+        action="store_true",
+        help="Do not label location names.",
+    )
+    parser.add_argument(
+        "--focus-region",
+        nargs=4,
+        type=float,
+        metavar=("MIN_X", "MAX_X", "MIN_Z", "MAX_Z"),
+        help="Zoom to a specific map region.",
+    )
+    parser.add_argument(
+        "--background-bounds",
+        nargs=4,
+        type=float,
+        metavar=("MIN_X", "MAX_X", "MIN_Z", "MAX_Z"),
+        help="World-coordinate bounds to map the background image onto. "
+             "Use this to calibrate a background image that has margins or is not edge-to-edge.",
+    )
+    args = parser.parse_args()
+
+    if args.json is None:
+        raise FileNotFoundError(f"No AILocationSettings.json found under: {MPMISSIONS_DIR}")
+
+    plot_ai_locations(
+        json_file_path=args.json,
+        output_dir=args.output_dir,
+        label_locations=not args.no_labels,
+        focus_region=tuple(args.focus_region) if args.focus_region else None,
+        background_bounds=tuple(args.background_bounds) if args.background_bounds else None,
+    )
+
+
+if __name__ == "__main__":
+    main()

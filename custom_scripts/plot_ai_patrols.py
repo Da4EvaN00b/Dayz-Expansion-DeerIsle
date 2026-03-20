@@ -9,25 +9,32 @@ from argparse import ArgumentParser
 # Get script directory
 script_dir = Path(__file__).resolve().parent
 
-# Input file paths (relative to repo root; mpmissions subfolder varies by project)
+# Input file paths (relative to repo root; prefer Deer Isle for this server)
 mpmissions_dir = script_dir.parent / 'mpmissions'
+preferred_mission_dir = mpmissions_dir / 'Expansion.deerisle'
+
+DEFAULT_MAP_SIZE = 15000.0
+DEFAULT_EXTENT = (0.0, DEFAULT_MAP_SIZE, 0.0, DEFAULT_MAP_SIZE)
+DEFAULT_BACKGROUND_IMAGE = script_dir / 'deer_isle_background.png'
+# The image pixel dimensions do not need to match the DayZ world size.
+# Matplotlib stretches the image into these world coordinates via `extent`.
+# Deer Isle background art appears to cover a slightly larger world box than
+# the playable 0..15000 coordinates. This default keeps plot data unshifted
+# while scaling the image outward so points land further inward on the art.
+DEFAULT_BACKGROUND_WORLD_BOUNDS = (0.0, 16875.0, 0.0, 16875.0)
 
 
-def resolve_first(glob_pattern):
-    candidates = sorted(mpmissions_dir.glob(glob_pattern))
+def resolve_settings_path(filename):
+    preferred = preferred_mission_dir / 'expansion' / 'settings' / filename
+    if preferred.exists():
+        return preferred
+
+    candidates = sorted(mpmissions_dir.glob(f'*/expansion/settings/{filename}'))
     return candidates[0] if candidates else None
 
 # Generate output filename with timestamp
 output_filename = f"{datetime.now().strftime('%Y%m%d%H%M')}_patrols.png"
 output_path = script_dir / output_filename
-
-# Background image (relative to custom_scripts)
-background_image_path = script_dir / 'hashima-map-background.png'
-# Map extent for background image (min_x, max_x, min_z, max_z) in meters
-# Patrol coordinates are on a 5200 x 5200 scale.
-background_extent = (0, 5200, 0, 5200)
-# Fixed alignment offset for this server/map background.
-coordinate_offset = 32.0
 
 def main():
     parser = ArgumentParser(description="Plot AI patrol waypoints and AI location radii.")
@@ -40,6 +47,11 @@ def main():
         "--label-locations",
         action="store_true",
         help="Label AILocationSettings.json circles by Name while still plotting patrol data.",
+    )
+    parser.add_argument(
+        "--no-location-circles",
+        action="store_true",
+        help="Do not draw AILocationSettings.json circles.",
     )
     parser.add_argument(
         "--no-patrol-labels",
@@ -67,6 +79,14 @@ def main():
         metavar=("WIDTH", "HEIGHT"),
         help="Width/height for --focus-center region in meters (default: 800 800).",
     )
+    parser.add_argument(
+        "--background-bounds",
+        nargs=4,
+        type=float,
+        metavar=("MIN_X", "MAX_X", "MIN_Z", "MAX_Z"),
+        help="World-coordinate bounds to map the background image onto. "
+             "Use this to calibrate a background image that has margins or is not edge-to-edge.",
+    )
     args = parser.parse_args()
 
     if args.focus_region and args.focus_center:
@@ -75,18 +95,17 @@ def main():
     if args.focus_size and not args.focus_center:
         parser.error("--focus-size requires --focus-center.")
 
-    dx = coordinate_offset
-    dz = coordinate_offset
+    background_bounds = tuple(args.background_bounds) if args.background_bounds else DEFAULT_BACKGROUND_WORLD_BOUNDS
 
     patrol_file_path = None
     if not args.locations_only:
-        patrol_file_path = resolve_first('*/expansion/settings/AIPatrolSettings.json')
+        patrol_file_path = resolve_settings_path('AIPatrolSettings.json')
         if patrol_file_path is None:
             raise FileNotFoundError(
                 f"No AIPatrolSettings.json found under: {mpmissions_dir}"
             )
 
-    ai_locations_path = resolve_first('*/expansion/settings/AILocationSettings.json')
+    ai_locations_path = None if args.no_location_circles else resolve_settings_path('AILocationSettings.json')
     if ai_locations_path is None and args.locations_only:
         raise FileNotFoundError(
             f"No AILocationSettings.json found under: {mpmissions_dir}"
@@ -101,7 +120,7 @@ def main():
         for patrol in patrols:
             name = patrol.get("Name", "Unknown")
             waypoints = patrol.get("Waypoints", [])
-            coords = [(wp[0] + dx, wp[2] + dz) for wp in waypoints]
+            coords = [(wp[0], wp[2]) for wp in waypoints if len(wp) >= 3]
             if coords:
                 plot_data.append((name, coords))
 
@@ -115,15 +134,15 @@ def main():
     fig, ax = plt.subplots(figsize=(12, 10))
 
     # Draw background image if present
-    if background_image_path.exists():
-        bg = plt.imread(background_image_path)
+    if DEFAULT_BACKGROUND_IMAGE.exists():
+        bg = plt.imread(DEFAULT_BACKGROUND_IMAGE)
         ax.imshow(
             bg,
-            extent=background_extent,
+            extent=background_bounds,
             origin='upper'
         )
     else:
-        print(f"Background image not found: {background_image_path}")
+        print(f"Background image not found: {DEFAULT_BACKGROUND_IMAGE}")
 
     for name, coords in plot_data:
         x_coords, z_coords = zip(*coords)
@@ -152,7 +171,7 @@ def main():
             name = location.get('Name', 'Unknown')
             if len(position) >= 3 and radius > 0:
                 circle = Circle(
-                    (position[0] + dx, position[2] + dz),
+                    (position[0], position[2]),
                     radius,
                     fill=False,
                     edgecolor='red',
@@ -163,7 +182,7 @@ def main():
                 if args.locations_only or args.label_locations:
                     ax.annotate(
                         name,
-                        (position[0] + dx, position[2] + dz),
+                        (position[0], position[2]),
                         xytext=(0, 6),
                         textcoords='offset points',
                         ha='center',
@@ -173,7 +192,7 @@ def main():
                     )
 
     # Customize the plot
-    ax.set_title("Patrol Waypoints (X and Z Coordinates)")
+    ax.set_title("Deer Isle AI Patrols and Roaming Areas")
     ax.set_xlabel("X Coordinate")
     ax.set_ylabel("Z Coordinate")
     if plot_data:
@@ -190,7 +209,7 @@ def main():
         min_z = center_z - (height / 2.0)
         max_z = center_z + (height / 2.0)
     else:
-        min_x, max_x, min_z, max_z = background_extent
+        min_x, max_x, min_z, max_z = DEFAULT_EXTENT
 
     ax.set_xlim(min_x, max_x)
     ax.set_ylim(min_z, max_z)
