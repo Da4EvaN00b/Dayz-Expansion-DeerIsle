@@ -87,6 +87,14 @@ def main():
         help="World-coordinate bounds to map the background image onto. "
              "Use this to calibrate a background image that has margins or is not edge-to-edge.",
     )
+    parser.add_argument(
+        "--offset",
+        nargs=2,
+        type=float,
+        metavar=("DX", "DZ"),
+        default=(0.0, 0.0),
+        help="Offset to apply to plotted X/Z coordinates after reading them.",
+    )
     args = parser.parse_args()
 
     if args.focus_region and args.focus_center:
@@ -96,6 +104,7 @@ def main():
         parser.error("--focus-size requires --focus-center.")
 
     background_bounds = tuple(args.background_bounds) if args.background_bounds else DEFAULT_BACKGROUND_WORLD_BOUNDS
+    dx, dz = args.offset
 
     patrol_file_path = None
     if not args.locations_only:
@@ -120,7 +129,7 @@ def main():
         for patrol in patrols:
             name = patrol.get("Name", "Unknown")
             waypoints = patrol.get("Waypoints", [])
-            coords = [(wp[0], wp[2]) for wp in waypoints if len(wp) >= 3]
+            coords = [(wp[0] + dx, wp[2] + dz) for wp in waypoints if len(wp) >= 3]
             if coords:
                 plot_data.append((name, coords))
 
@@ -171,7 +180,7 @@ def main():
             name = location.get('Name', 'Unknown')
             if len(position) >= 3 and radius > 0:
                 circle = Circle(
-                    (position[0], position[2]),
+                    (position[0] + dx, position[2] + dz),
                     radius,
                     fill=False,
                     edgecolor='red',
@@ -182,7 +191,7 @@ def main():
                 if args.locations_only or args.label_locations:
                     ax.annotate(
                         name,
-                        (position[0], position[2]),
+                        (position[0] + dx, position[2] + dz),
                         xytext=(0, 6),
                         textcoords='offset points',
                         ha='center',
@@ -209,7 +218,7 @@ def main():
         min_z = center_z - (height / 2.0)
         max_z = center_z + (height / 2.0)
     else:
-        min_x, max_x, min_z, max_z = DEFAULT_EXTENT
+        min_x, max_x, min_z, max_z = background_bounds
 
     ax.set_xlim(min_x, max_x)
     ax.set_ylim(min_z, max_z)

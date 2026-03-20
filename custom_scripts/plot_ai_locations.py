@@ -115,7 +115,7 @@ def plot_ai_locations(
     if focus_region:
         min_x, max_x, min_z, max_z = focus_region
     else:
-        min_x, max_x, min_z, max_z = DEFAULT_EXTENT
+        min_x, max_x, min_z, max_z = image_bounds
 
     ax.set_xlim(min_x, max_x)
     ax.set_ylim(min_z, max_z)
