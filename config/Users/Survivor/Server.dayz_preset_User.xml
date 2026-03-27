@@ -1172,30 +1172,6 @@
     <input name="UAExpansionBoatTurbo">
         <btn name="kLShift" />
     </input>
-    <input name="UAExpansionBikeGearUp">
-        <btn name="kE" />
-    </input>
-    <input name="UAExpansionBikeGearDown">
-        <btn name="kQ" />
-    </input>
-    <input name="UAExpansionBikeMoveForward">
-        <btn name="kW" />
-    </input>
-    <input name="UAExpansionBikeMoveBackward">
-        <btn name="kS" />
-    </input>
-    <input name="UAExpansionBikeRotateLeft">
-        <btn name="kA" />
-    </input>
-    <input name="UAExpansionBikeRotateRight">
-        <btn name="kD" />
-    </input>
-    <input name="UAExpansionBikeGentle">
-        <btn name="kLControl" />
-    </input>
-    <input name="UAExpansionBikeTurbo">
-        <btn name="kLShift" />
-    </input>
     <input name="UAExpansionCarRefill">
         <btn name="kR" />
     </input>
