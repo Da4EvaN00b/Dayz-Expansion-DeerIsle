@@ -820,6 +820,23 @@
     <pos x="5044.6" z="7981.2" a="59.25" />
     <pos x="13283.3" z="4467.6" a="26.55" />
   </event>
+  <event name="VehicleMH6Helicopter">
+    <pos x="5524.5" z="3606.203" a="25.65418" />
+    <pos x="5448.344" z="3721.181" a="58.78547" />
+    <pos x="5660.844" z="3650.583" a="0" />
+  </event>
+  <event name="VehicleMerlinHelicopter">
+    <pos x="6319.688" z="14801.94" a="0" />
+  </event>
+  <event name="VehicleUh1hHelicopter">
+    <pos x="13307.67" z="9602.437" a="13.92287" />
+    <pos x="13592.56" z="9571.53" a="352.7809" />
+    <pos x="13541.36" z="9548.751" a="318.1025" />
+    <pos x="13260.81" z="9609.96" a="13.92287" />
+  </event>
+  <event name="VehicleGyroHelicopter">
+    <pos x="3778.844" z="9292.776" a="0" />
+  </event>
   <event name="VehicleUtilityBoat">
     <pos x="10011.94" z="10538.68" a="180.2238" />
   </event>
