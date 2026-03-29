@@ -818,10 +818,10 @@
         <children/>
     </event>
     <event name="StaticHeliCrash">
-        <nominal>4</nominal>
-        <min>4</min>
-        <max>4</max>
-        <lifetime>1200</lifetime>
+        <nominal>5</nominal>
+        <min>2</min>
+        <max>6</max>
+        <lifetime>1800</lifetime>
         <restock>0</restock>
         <saferadius>400</saferadius>
         <distanceradius>250</distanceradius>
@@ -855,7 +855,7 @@
         <nominal>6</nominal>
         <min>4</min>
         <max>6</max>
-        <lifetime>1200</lifetime>
+        <lifetime>1800</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
         <distanceradius>500</distanceradius>
