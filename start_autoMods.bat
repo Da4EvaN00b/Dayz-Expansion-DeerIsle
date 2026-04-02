@@ -12,7 +12,7 @@ if exist "%SCRIPT_DIR%.env" (
 :: WORKSHOP UPDATES TOGGLE
 :: Set to 0 to completely disable all mod/workshop updates
 :: ============================================
-set "ENABLE_WORKSHOP_UPDATES=1"
+if not defined ENABLE_WORKSHOP_UPDATES set "ENABLE_WORKSHOP_UPDATES=1"
 
 ::Name for the CMD window
 set "serverName=KRONJON-DeerIsle-PvE"
@@ -26,16 +26,17 @@ set "serverProfile=config"
 set "serverCPU=4"
 
 :: SteamCMD configuration (required for auto-updating mods)
+:: Override any of these in .env for machine-specific config
 set "STEAMCMD=C:\steamcmd\steamcmd.exe"
 set "STEAM_LOGIN=anonymous"
 set "STEAM_PASS="
 set "STEAM_GUARD="
 set "WORKSHOP_APPID=221100"
-set "UPDATE_ON_RESTART=1"
-set "USE_STEAMCMD=0"
-set "WORKSHOP_PATH=E:\SteamLibrary\steamapps\workshop\content\221100"
-set "SKIP_MODS=_@Heatmap @DeerIsle"
-set "SKIP_MOD_IDS=2854246756 1602372402"
+if not defined UPDATE_ON_RESTART set "UPDATE_ON_RESTART=1"
+if not defined USE_STEAMCMD set "USE_STEAMCMD=0"
+if not defined WORKSHOP_PATH set "WORKSHOP_PATH=E:\SteamLibrary\steamapps\workshop\content\221100"
+if not defined SKIP_MODS set "SKIP_MODS=_@Heatmap @DeerIsle"
+if not defined SKIP_MOD_IDS set "SKIP_MOD_IDS=2854246756 1602372402"
 if defined USERNAME set "STEAM_LOGIN=%USERNAME%"
 if defined PASSWORD set "STEAM_PASS=%PASSWORD%"
 
