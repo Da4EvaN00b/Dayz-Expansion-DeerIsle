@@ -1,5 +1,7 @@
 /@*/
 _@*/
+.env
+config/DataCache/cache.ch
 *.exe
 *.RPT
 *.ADM
