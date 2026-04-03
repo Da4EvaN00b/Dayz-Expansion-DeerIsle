@@ -8757,10 +8757,10 @@
         <usage name="School" />
         </type>
     <type name="Flaregun">
-        <nominal>28</nominal>
+        <nominal>40</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>14</min>
+        <min>30</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -8772,6 +8772,7 @@
         <usage name="Industrial" />
         <value name="Tier1" />
         <value name="Tier2" />
+        <value name="Tier3" />
         </type>
     <type name="FlashGrenade">
         <nominal>70</nominal>
