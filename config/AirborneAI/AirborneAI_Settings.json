@@ -2,7 +2,7 @@
     "readMe": "--> Be sure to check the config explanation on the workshop for option descriptions <--",
     "Enabled": 1,
     "minPlayersToSpawnAircraft": 1,
-    "maxActiveAircraft": 0,
+    "maxActiveAircraft": 1,
     "startDelayTime": 60.0,
     "timeBetweenPlaneSpawns": 10000.0,
     "maxTimeBetweenPlaneSpawns": 12000.0,
