@@ -2,641 +2,432 @@
     "m_Version": 4,
     "RoamingLocations": [
         {
-            "Name": "KP_ParisIsland (Paris Island)",
+            "Name": "Portland",
             "Position": [
-                2880.639892578125,
-                0.0,
-                3903.840087890625
+                5999.015,
+                12.17647,
+                14554.8
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 272.2138112817982,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Airfield",
+            "Name": "Paris Island",
             "Position": [
-                5508.0498046875,
-                0.0,
-                3555.0
+                2772.58,
+                25.75,
+                3649.58
             ],
-            "Radius": 100.0,
-            "Type": "Airport",
+            "Radius": 300.0,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_DevilsEye (Devils Eye)",
+            "Name": "ParisIsland2",
             "Position": [
-                6654.22998046875,
-                0.0,
-                3472.0
+                3168.6,
+                25.75,
+                4045.6
             ],
-            "Radius": 100.0,
-            "Type": "RockArea",
+            "Radius": 250.0,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Prison",
+            "Name": "Swanville",
             "Position": [
-                5470.16015625,
-                0.0,
-                657.9600219726563
+                5283.6849999999995,
+                4.78761,
+                12426.35
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 74.1039173749441,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Kushville",
+            "Name": "Broken Police Bridge",
             "Position": [
-                7533.60009765625,
-                0.0,
-                3910.2099609375
+                5287.225,
+                4.718249999999999,
+                9196.654999999999
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 207.4055031806655,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Milo",
+            "Name": "RCFI",
             "Position": [
-                6545.97998046875,
-                0.0,
-                3922.5400390625
+                3728.035,
+                12.543099999999999,
+                8827.86
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 150.58622259626705,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_SunsetCross (Sunset Cross)",
+            "Name": "Old Town",
             "Position": [
-                6580.81982421875,
-                0.0,
-                6382.89990234375
+                1955.59,
+                9.19,
+                8980.89
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 125.86743776688232,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Asheville",
+            "Name": "Westbrook",
             "Position": [
-                7311.22998046875,
-                0.0,
-                2607.06005859375
+                3334.895,
+                21.45315,
+                6446.03
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 230.20882778428054,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_WarrenCove (Warren Cove)",
+            "Name": "Power plant",
             "Position": [
-                7050.68017578125,
-                0.0,
-                5360.81982421875
+                4721.055,
+                14.2372,
+                7149.22
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 258.2002500000002,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Oceanville",
+            "Name": "Sandy Bay",
             "Position": [
-                10258.6298828125,
-                0.0,
-                4879.9599609375
+                5364.469999999999,
+                6.779775,
+                7616.665
             ],
-            "Radius": 500.0,
-            "Type": "NameCity",
+            "Radius": 158.58843551095532,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Stonington",
+            "Name": "MountainVille",
             "Position": [
-                6829.419921875,
-                0.0,
-                1860.6800537109376
+                7268.085,
+                6.674995,
+                8515.35
             ],
-            "Radius": 1000.0,
-            "Type": "NameCityCapital",
+            "Radius": 105.15848617236006,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Greenville",
+            "Name": "Waldoborough",
             "Position": [
-                4744.7099609375,
-                0.0,
-                1492.5
+                8784.259999999998,
+                8.593895,
+                9321.2
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 574.4669021477653,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_SandyBay (Sandy Bay)",
+            "Name": "Bayville",
             "Position": [
-                5347.7099609375,
-                0.0,
-                7584.4599609375
+                10203.35,
+                5.850095,
+                12038.85
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 135.90255502565103,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Oldfield",
+            "Name": "Military-North-Bayville",
             "Position": [
-                6114.18994140625,
-                0.0,
-                6921.68994140625
+                10074.61,
+                23.63365,
+                12529.7
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 137.56871477647067,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_SheepIsland (Sheep Island)",
+            "Name": "Area 42-1",
             "Position": [
-                11941.830078125,
-                0.0,
-                3882.22998046875
+                10982.7,
+                5.42206,
+                10311.15
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 97.97525468836527,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Smallville",
+            "Name": "Area 42-2",
             "Position": [
-                10355.0400390625,
-                0.0,
-                4360.0
+                11383.400000000001,
+                10.147805,
+                10118.425
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 228.59844564555283,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_OilrigHorizon",
+            "Name": "Area 42-3",
             "Position": [
-                4139.5,
-                0.0,
-                15461.2998046875
+                13435.650000000001,
+                10.79069,
+                9823.635
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 249.2396054789703,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_OilrigDeepwater",
+            "Name": "Camp Wolf",
             "Position": [
-                1668.18994140625,
-                0.0,
-                12694.2001953125
+                5483.3,
+                8.1043,
+                1076.1599999999999
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 63.6917684104469,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_OilrigRogueWave (Rogue Wave)",
+            "Name": "Prison",
             "Position": [
-                2144.840087890625,
-                0.0,
-                14620.2900390625
+                5510.6849999999995,
+                34.852500000000006,
+                668.544
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 67.94632693284451,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_GrootsHill (Groots Hill)",
+            "Name": "Stonington1",
             "Position": [
-                7618.2998046875,
-                0.0,
-                4822.97998046875
+                6406.085,
+                31.575,
+                2088.265
             ],
-            "Radius": 100.0,
-            "Type": "Hill",
+            "Radius": 130.25713561884066,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_PaulsView (Pauls View)",
+            "Name": "Stonington2",
             "Position": [
-                9561.75,
-                0.0,
-                3716.429931640625
+                7053.635,
+                33.9448,
+                2049.725
             ],
-            "Radius": 100.0,
-            "Type": "Hill",
+            "Radius": 186.9054535791424,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Hazelands",
+            "Name": "Stonington3",
             "Position": [
-                4538.47998046875,
-                0.0,
-                2693.840087890625
+                6922.58,
+                5.3575,
+                1510.6799999999998
             ],
-            "Radius": 500.0,
-            "Type": "NameCity",
+            "Radius": 261.395251105008,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_StoningtonIndustrial",
+            "Name": "Ashville",
             "Position": [
-                6787.0498046875,
-                0.0,
-                2376.030029296875
+                7241.755,
+                26.1051,
+                2029.77
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 508.2258595241515,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_StoningtonSuburbsSouth (Suburbs South)",
+            "Name": "Kushville",
             "Position": [
-                7206.72021484375,
-                0.0,
-                1492.3599853515626
+                7418.73,
+                34.9071,
+                3134.13
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 666.1647870189478,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_StoningtonSuburbsNorth (Suburbs North)",
+            "Name": "GrootsHill",
             "Position": [
-                6335.52978515625,
-                0.0,
-                2043.489990234375
+                7538.6,
+                85.2122,
+                4601.25
             ],
-            "Radius": 100.0,
-            "Type": "Hill",
+            "Radius": 68.05568418765664,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_CampEagle (Camp Eagle)",
+            "Name": "OceanvilleBridge",
             "Position": [
-                8778.01953125,
-                0.0,
-                3733.2900390625
+                9769.415,
+                7.231085,
+                4366.925
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 78.6560785421255,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_CampWolf (Camp Wolf)",
+            "Name": "Oceanville",
             "Position": [
-                5478.759765625,
-                0.0,
-                1056.6300048828126
+                10235.85,
+                40.4199,
+                4910.5650000000005
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 126.8717790539432,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_ScoutsCampBigWest (Scouts Camp)",
+            "Name": "Camp Eagle",
             "Position": [
-                4930.43994140625,
-                0.0,
-                2049.25
+                10243.7,
+                38.5985,
+                4789.99
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 25.0,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_ScoutsCampEastSmall (Scouts Camp)",
+            "Name": "Fishers Camp",
             "Position": [
-                8476.9404296875,
-                0.0,
-                5305.3798828125
+                10360.7,
+                3.086125,
+                5581.8150000000005
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 61.00594901370243,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_FishersCamp (Fishers Camp)",
+            "Name": "Camp Bear",
             "Position": [
-                10343.419921875,
-                0.0,
-                5586.740234375
+                8795.79,
+                11.69912,
+                5989.29
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 219.15191330273618,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Portland",
+            "Name": "Cabins-1",
             "Position": [
-                6100.009765625,
-                0.0,
-                14802.419921875
+                8476.91,
+                13.036145,
+                5363.295
             ],
-            "Radius": 1000.0,
-            "Type": "NameCityCapital",
+            "Radius": 120.5032504574569,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Georgestown",
+            "Name": "Isl1-misc",
             "Position": [
-                4716.6298828125,
-                0.0,
-                4469.669921875
+                9555.735,
+                13.13378,
+                5848.17
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 108.71868656336179,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Westbrook",
+            "Name": "Isl1-misc2",
             "Position": [
-                3302.840087890625,
-                0.0,
-                6372.33984375
+                9740.145,
+                37.87335,
+                5515.655000000001
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 100.31820478918581,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Swamp",
+            "Name": "Warren Cove",
             "Position": [
-                3801.860107421875,
-                0.0,
-                9049.3203125
+                7034.155000000001,
+                8.82467,
+                5440.455
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 108.42318328717792,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_OldTown (Old Town)",
+            "Name": "MainDrag1",
             "Position": [
-                1840.6099853515626,
-                0.0,
-                9070.5595703125
+                6971.04,
+                32.7166,
+                5873.780000000001
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 91.4726620430933,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Mountainville",
+            "Name": "Sunset Cross",
             "Position": [
-                7291.0400390625,
-                0.0,
-                8511.830078125
+                6565.0650000000005,
+                15.09,
+                6394.360000000001
             ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
+            "Radius": 174.4996630850971,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_CampBear (Camp Bear)",
+            "Name": "West-Deepwater1",
             "Position": [
-                8865.9296875,
-                0.0,
-                5988.39990234375
+                765.4839999999999,
+                54.1708,
+                12112.4
             ],
-            "Radius": 100.0,
-            "Type": "StrongpointArea",
+            "Radius": 236.67990192639894,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_RCFI",
+            "Name": "West-Deepwater2",
             "Position": [
-                3732.699951171875,
-                0.0,
-                8812.9697265625
+                1048.175,
+                7.01249,
+                13392.099999999999
             ],
-            "Radius": 100.0,
-            "Type": "Hill",
+            "Radius": 330.6448049796982,
+            "Type": "",
             "Enabled": 1
         },
         {
-            "Name": "KP_Mine",
+            "Name": "NorthHaven",
             "Position": [
-                11148.4599609375,
-                0.0,
-                2273.530029296875
+                1115.155,
+                5.2958549999999995,
+                15203.55
             ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_CrotchIsland (Crotch Island)",
-            "Position": [
-                10812.1103515625,
-                0.0,
-                2584.110107421875
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Area42 (Area 42)",
-            "Position": [
-                13379.0498046875,
-                0.0,
-                9849.6396484375
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_RockenheimCircuit (Rockenheim Circuit)",
-            "Position": [
-                10060.0400390625,
-                0.0,
-                11060.91015625
-            ],
-            "Radius": 100.0,
-            "Type": "Hill",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Waldoboro",
-            "Position": [
-                8730.990234375,
-                0.0,
-                9163.400390625
-            ],
-            "Radius": 500.0,
-            "Type": "NameCity",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_EastHarbor (East Harbor)",
-            "Position": [
-                11363.580078125,
-                0.0,
-                10103.3701171875
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_WoodworkingIndustrial (Woodworking Industrial)",
-            "Position": [
-                4446.97021484375,
-                0.0,
-                12078.1396484375
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Swanville",
-            "Position": [
-                5289.25,
-                0.0,
-                12384.2197265625
-            ],
-            "Radius": 100.0,
-            "Type": "Hill",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Bayville",
-            "Position": [
-                10178.3603515625,
-                0.0,
-                12011.759765625
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_PearPlantation (Pear Plantation)",
-            "Position": [
-                9570.5400390625,
-                0.0,
-                7613.580078125
-            ],
-            "Radius": 100.0,
-            "Type": "Hill",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Montville",
-            "Position": [
-                9370.8896484375,
-                0.0,
-                8062.240234375
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Eastbrook",
-            "Position": [
-                10417.400390625,
-                0.0,
-                7851.9501953125
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Duskar",
-            "Position": [
-                7841.8798828125,
-                0.0,
-                8061.18017578125
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Fairfield",
-            "Position": [
-                9978.330078125,
-                0.0,
-                6825.93994140625
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_NorthHaven (North Haven)",
-            "Position": [
-                519.6900024414063,
-                0.0,
-                15113.509765625
-            ],
-            "Radius": 500.0,
-            "Type": "NameCity",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_SwansIsland (Swansisland)",
-            "Position": [
-                1120.0,
-                0.0,
-                15363.080078125
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Threepwood",
-            "Position": [
-                9072.8896484375,
-                0.0,
-                7738.64990234375
-            ],
-            "Radius": 200.0,
-            "Type": "NameVillage",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_KMUC",
-            "Position": [
-                7226.10986328125,
-                0.0,
-                11625.58984375
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_BarenFall (Baren Fall)",
-            "Position": [
-                7632.4501953125,
-                0.0,
-                9823.98046875
-            ],
-            "Radius": 100.0,
-            "Type": "Hill",
-            "Enabled": 1
-        },
-        {
-            "Name": "KP_Powerplant",
-            "Position": [
-                4790.47998046875,
-                0.0,
-                7051.89013671875
-            ],
-            "Radius": 100.0,
-            "Type": "NameLocal",
+            "Radius": 452.33787114314526,
+            "Type": "",
             "Enabled": 1
         }
     ],
@@ -655,5 +446,46 @@
         "Land_Ship_Medium2",
         "Land_Train_Wagon_Box"
     ],
-    "NoGoAreas": []
+    "NoGoAreas": [
+        {
+            "Name": "area 42-1",
+            "Position": [
+                11218.7,
+                15.5884,
+                10208.95
+            ],
+            "Radius": 69.94239473488113,
+            "Height": 150.0
+        },
+        {
+            "Name": "area 42-2",
+            "Position": [
+                11295.2,
+                16.2964,
+                10168.2
+            ],
+            "Radius": 50.859142983342345,
+            "Height": 150.0
+        },
+        {
+            "Name": "Oilrig1",
+            "Position": [
+                4125.25,
+                24.0402,
+                15506.15
+            ],
+            "Radius": 112.18587846627572,
+            "Height": 150.0
+        },
+        {
+            "Name": "Oilrig2",
+            "Position": [
+                3443.78,
+                25.199,
+                12431.4
+            ],
+            "Radius": 25.0,
+            "Height": 150.0
+        }
+    ]
 }
