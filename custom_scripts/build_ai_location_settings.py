@@ -14,6 +14,7 @@ SETTINGS_PATH = ROOT / "mpmissions" / "Expansion.deerisle" / "expansion" / "sett
 DEFAULT_NO_GO_HEIGHT = 150.0
 ROAMING_TYPE = ""
 MIN_RADIUS = 25.0
+MAX_ROAMING_RADIUS = 200.0
 
 POINT_RE = re.compile(r"<\s*([-0-9.]+)\s*,\s*([-0-9.]+)\s*,\s*([-0-9.]+)\s*>")
 
@@ -106,11 +107,12 @@ def radius_with_buffer(a: tuple[float, float, float], b: tuple[float, float, flo
 def build_roaming_locations(entries: list[Entry]) -> list[dict]:
     locations = []
     for entry in entries:
+        radius = min(radius_with_buffer(entry.edge1, entry.edge2), MAX_ROAMING_RADIUS)
         locations.append(
             {
                 "Name": entry.name,
                 "Position": midpoint(entry.edge1, entry.edge2),
-                "Radius": radius_with_buffer(entry.edge1, entry.edge2),
+                "Radius": radius,
                 "Type": ROAMING_TYPE,
                 "Enabled": 1,
             }

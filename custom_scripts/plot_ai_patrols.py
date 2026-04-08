@@ -49,6 +49,11 @@ def main():
         help="Label AILocationSettings.json circles by Name while still plotting patrol data.",
     )
     parser.add_argument(
+        "--label-locations-instead-of-patrols",
+        action="store_true",
+        help="Label AILocationSettings.json circles by Name and suppress AIPatrolSettings.json labels.",
+    )
+    parser.add_argument(
         "--no-location-circles",
         action="store_true",
         help="Do not draw AILocationSettings.json circles.",
@@ -96,6 +101,10 @@ def main():
         help="Offset to apply to plotted X/Z coordinates after reading them.",
     )
     args = parser.parse_args()
+
+    if args.label_locations_instead_of_patrols:
+        args.label_locations = True
+        args.no_patrol_labels = True
 
     if args.focus_region and args.focus_center:
         parser.error("Use either --focus-region or --focus-center, not both.")
